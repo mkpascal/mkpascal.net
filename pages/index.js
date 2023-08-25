@@ -18,11 +18,12 @@ export default function Home({ allPostsData, allProjectsData }) {
         </p>
       </section>
       <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
-            <h2 className={utilStyles.headingLg2}>Connections</h2>
-            <ul className={utilStyles.list}>
-                    <li className={`${utilStyles.listItem} ${utilStyles.listInLine}`}><Link href={`https://www.linkedin.com/in/mkpascal`}>LinkedIn</Link></li>
-                    <li className={`${utilStyles.listItem} ${utilStyles.listInLine}`}><Link href={`https://github.com/mkpascal`}>GitHub</Link></li>
+            <h2 className={utilStyles.headingLg2}>Connections
+            <ul className={`${utilStyles.list} ${utilStyles.listConnections}`}>
+                    <li className={`${utilStyles.listItem} ${utilStyles.listInLine}`}><Link href={`https://www.linkedin.com/in/mkpascal`}><i className="fab fa-linkedin"></i></Link></li>
+                    <li className={`${utilStyles.listItem} ${utilStyles.listInLine}`}><Link href={`https://github.com/mkpascal`}><i className="fab fa-github"></i></Link></li>
             </ul>
+            </h2>
       </section>
       <section className={`${utilStyles.headingMd} ${utilStyles.padding1px} ${utilStyles.hiddenForNow}`}>
             <h2 className={utilStyles.headingLg2}>Projects</h2>
