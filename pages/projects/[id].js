@@ -10,7 +10,7 @@ export default function Post({ projectData }) {
                 <title>{projectData.title}</title>
             </Head>
             <article>
-                <h1 className={utilStyles.headingXl}>{projectData.title}</h1>
+                <h1 className={utilStyles.headingXl}>{projectData.title} <span className={`${utilStyles.topBadge} badge ${projectData.categoryClass}`}>{projectData.category}</span></h1>
                 <div dangerouslySetInnerHTML={{ __html: projectData.contentHtml }} />
             </article>
         </Layout>
