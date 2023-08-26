@@ -15,7 +15,7 @@ export default function Home({ allPostsData, allProjectsData }) {
       </Head>
       <section className={`${utilStyles.headingMd}`}>
         <p className={utilStyles.topP}>
-            Hi. My name is <strong>Pascal</strong>. I’m a Senior Software Engineer located in San Francisco, CA, USA. My resume can be downloaded <a href="/resume.pdf">here</a>. You can reach me via email at <a href="mailto:pascal@khot.us">pascal@khot.us</a>.
+            Hi. My name is Pascal. I’m a Senior Software Engineer located in San Francisco, CA, USA. My resume can be downloaded <a href="/resume.pdf">here</a>. You can reach me via email at <a href="mailto:pascal@khot.us">pascal@khot.us</a>.
         </p>
       </section>
       <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
