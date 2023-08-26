@@ -1,6 +1,6 @@
 ---
 title: 'C9 Radio'
-order: 10
+order: 9
 category: 'Hobby and non-profit projects'
 categoryClass: 'bg-success'
 logoPath: '/images/c9radioLogo.png'

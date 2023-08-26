@@ -1,6 +1,6 @@
 ---
 title: 'BoxChaser'
-order: 9
+order: 10
 category: 'Hobby and non-profit projects'
 categoryClass: 'bg-success'
 logoPath: '/images/boxchaserLogo.png'
