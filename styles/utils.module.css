@@ -134,3 +134,8 @@
 .dateText {
     margin-bottom: 20px;
 }
+
+.spanTop {
+    display: block;
+    margin: 10px 0px 10px 0px;
+}
