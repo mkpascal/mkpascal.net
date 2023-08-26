@@ -8,9 +8,9 @@ logoPath: '/images/cnetzdnet.png'
 
 ![CNET](/images/cnetScreenshot.png#portfolio-image)
 
-![CMS](https://img.shields.io/badge/CMS-blue?style=for-the-badge&logoColor=white#portfolio-badge)
 ![BEDEV](https://img.shields.io/badge/Back_End_Development-red?style=for-the-badge&logoColor=white#portfolio-badge)
 ![FEDEV](https://img.shields.io/badge/Front_End_Development-green?style=for-the-badge&logoColor=white#portfolio-badge)
+![CMS](https://img.shields.io/badge/CMS-blue?style=for-the-badge&logoColor=white#portfolio-badge)
 ![Symfony](https://img.shields.io/badge/symfony-%23000000.svg?style=for-the-badge&logo=symfony&logoColor=white#portfolio-badge)
 ![Vue.js](https://img.shields.io/badge/vuejs-%2335495e.svg?style=for-the-badge&logo=vuedotjs&logoColor=%234FC08D#portfolio-badge)
 ![MySQL](https://img.shields.io/badge/mysql-%2300f.svg?style=for-the-badge&logo=mysql&logoColor=white#portfolio-badge)

@@ -8,8 +8,8 @@ logoPath: '/images/mctvg.png'
 
 ![Metacritic](/images/metacriticScreenshot.png#portfolio-image)
 
-![CMS](https://img.shields.io/badge/CMS-blue?style=for-the-badge&logoColor=white#portfolio-badge)
 ![BEDEV](https://img.shields.io/badge/Back_End_Development-red?style=for-the-badge&logoColor=white#portfolio-badge)
+![CMS](https://img.shields.io/badge/CMS-blue?style=for-the-badge&logoColor=white#portfolio-badge)
 ![Symfony](https://img.shields.io/badge/symfony-%23000000.svg?style=for-the-badge&logo=symfony&logoColor=white#portfolio-badge)
 ![MySQL](https://img.shields.io/badge/mysql-%2300f.svg?style=for-the-badge&logo=mysql&logoColor=white#portfolio-badge)
 ![MongoDB](https://img.shields.io/badge/MongoDB-%234ea94b.svg?style=for-the-badge&logo=mongodb&logoColor=white#portfolio-badge)
