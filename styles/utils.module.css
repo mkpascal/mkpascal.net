@@ -28,6 +28,20 @@
     font-weight: 700;
 }
 
+.headingLg3 {
+    font-size: 1.5rem;
+    line-height: 1.4;
+    margin: 15px 0 20px 0;
+    font-weight: 700;
+}
+
+.headingLg4 {
+    font-size: 1.5rem;
+    line-height: 1.4;
+    margin: 15px 0 10px 0;
+    font-weight: 700;
+}
+
 .headingMd {
   font-size: 1.2rem;
   line-height: 1.5;
@@ -97,4 +111,14 @@
 .listConnections {
     display: inline;
     margin-left: 20px;
+}
+
+.borderProjects {
+    border-radius: 20px;
+    transition: transform .2s;
+}
+
+.borderProjects:hover {
+    border-radius: 20px;
+    transform: scale(1.1);
 }
