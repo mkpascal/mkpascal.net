@@ -30,7 +30,7 @@ export default function Home({ allPostsData, allProjectsData }) {
             <h2 className={utilStyles.headingLg3}>Projects</h2>
             <ul className={`${utilStyles.list} row`}>
                 {allProjectsData.map(({ id, title, logoPath }) => (
-                    <li id={`${id}`} className={`${utilStyles.listItem} ${utilStyles.listInLine} col-3`}>
+                    <li key={id} className={`${utilStyles.listItem} ${utilStyles.listInLine} col-3`}>
                         <Link href={`/projects/${id}`}>
                             <Image
                                 src={`${logoPath}`}
@@ -38,7 +38,10 @@ export default function Home({ allPostsData, allProjectsData }) {
                                 height={128}
                                 width={128}
                                 alt={title}
-                                layout="responsive"
+                                style={{
+                                    width: '100%',
+                                    height: 'auto',
+                                }}
                             />
                         </Link>
                     </li>
