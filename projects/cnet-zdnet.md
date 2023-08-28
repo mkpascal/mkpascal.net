@@ -17,6 +17,9 @@ logoPath: '/images/cnetzdnet.png'
 ![MongoDB](https://img.shields.io/badge/MongoDB-%234ea94b.svg?style=for-the-badge&logo=mongodb&logoColor=white#portfolio-badge)
 ![Google Cloud](https://img.shields.io/badge/GCP-%234285F4.svg?style=for-the-badge&logo=google-cloud&logoColor=white#portfolio-badge)
 ![Separator](#portfolio-separator)
+[![Visit CNET Website](https://img.shields.io/badge/🔗-CNET_WEBSITE-e81e20.svg?style=for-the-badge#portfolio-badge)](https://www.cnet.com)
+[![Visit ZDNET Website](https://img.shields.io/badge/🔗-ZDNET_WEBSITE-d0ff4b.svg?style=for-the-badge#portfolio-badge)](https://www.zdnet.com)
+![Separator](#portfolio-separator)
 
 I had the responsibility of maintaining the internal CMS that was utilized by all our internal brands to ensure its continuous operation. I also took charge of the front-end features for both brands, including front door, articles, and ads. Furthermore, I continuously improved the CMS with new features and commerce-related functionalities.
 

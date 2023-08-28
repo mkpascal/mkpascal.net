@@ -15,6 +15,9 @@ logoPath: '/images/mctvg.png'
 ![MongoDB](https://img.shields.io/badge/MongoDB-%234ea94b.svg?style=for-the-badge&logo=mongodb&logoColor=white#portfolio-badge)
 ![Google Cloud](https://img.shields.io/badge/GCP-%234285F4.svg?style=for-the-badge&logo=google-cloud&logoColor=white#portfolio-badge)
 ![Separator](#portfolio-separator)
+[![Visit Metacritic Website](https://img.shields.io/badge/🔗-METACRITIC_WEBSITE-ffcc34.svg?style=for-the-badge#portfolio-badge)](https://www.metacritic.com)
+[![Visit TV Guide Website](https://img.shields.io/badge/🔗-TV_GUIDE_WEBSITE-ec1c24.svg?style=for-the-badge#portfolio-badge)](https://www.tvguide.com)
+![Separator](#portfolio-separator)
 
 I was in charge of keeping the internal CMS used by all internal brands up and running. Furthermore, I continuously improved the CMS with new features and entertainment-related functionalities.
 

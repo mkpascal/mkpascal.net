@@ -17,6 +17,8 @@ logoPath: '/images/c9radioLogo.png'
 ![Cloudflare](https://img.shields.io/badge/Cloudflare-F38020?style=for-the-badge&logo=Cloudflare&logoColor=white#portfolio-badge)
 ![OVH](https://img.shields.io/badge/ovh-%23123F6D.svg?style=for-the-badge&logo=ovh&logoColor=#123F6D#portfolio-badge)
 ![Separator](#portfolio-separator)
+[![Visit Website](https://img.shields.io/badge/🔗-C9_RADIO_WEBSITE-10102b.svg?style=for-the-badge#portfolio-badge)](https://www.c9.fr)
+![Separator](#portfolio-separator)
 
 C9 Radio is an officially recognized non-profit internet radio station that I'm deeply committed to maintaining. My responsibilities include day-to-day team management and the overall upkeep of all technical services.
 
