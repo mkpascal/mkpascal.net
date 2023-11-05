@@ -1,6 +1,6 @@
 ---
 title: 'CNET/ZDNET'
-order: 1
+order: 2
 category: 'Employment-related projects'
 categoryClass: 'bg-dark'
 logoPath: '/images/cnetzdnet.png'
