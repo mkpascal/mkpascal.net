@@ -1,6 +1,6 @@
 ---
 title: 'Chowhound'
-order: 3
+order: 1
 category: 'Employment-related projects'
 categoryClass: 'bg-dark'
 logoPath: '/images/chowhoundLogo.png'
@@ -24,5 +24,3 @@ I held the position of site engineer, overseeing the development of the internal
 Additionally, I handled the integration and migration of the User Account System, as well as the integration of Sendgrid for mail/queue management. I also facilitated the integration of Wordpress and took charge of managing the community forums and Apple News integration.
 
 Furthermore, I implemented a Place System with 3rd party integration and dockerized the entire stack for improved scalability and deployment. In my role, I optimized server performance, including Apache and Redis, to enhance system efficiency. Moreover, I implemented a branching strategy for streamlined development and successfully carried out database and code optimization to improve overall performance.
-
-*This project has been sunsetted.*
