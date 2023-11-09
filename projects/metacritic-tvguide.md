@@ -1,6 +1,6 @@
 ---
 title: 'Metacritic/TVG'
-order: 3
+order: 2
 category: 'Employment-related projects'
 categoryClass: 'bg-dark'
 logoPath: '/images/mctvg.png'

@@ -1,6 +1,6 @@
 ---
 title: 'C9 Radio'
-order: 9
+order: 5
 category: 'Hobby and non-profit projects'
 categoryClass: 'bg-success'
 logoPath: '/images/c9radioLogo.png'
@@ -20,7 +20,7 @@ logoPath: '/images/c9radioLogo.png'
 [![Visit Website](https://img.shields.io/badge/🔗-C9_RADIO_WEBSITE-10102b.svg?style=for-the-badge#portfolio-badge)](https://www.c9.fr)
 ![Separator](#portfolio-separator)
 
-C9 Radio is an officially recognized non-profit internet radio station that I'm deeply committed to maintaining. My responsibilities include day-to-day team management and the overall upkeep of all technical services.
+C9 Radio is an officially recognized French non-profit internet radio station that I'm deeply committed to maintaining. My responsibilities include day-to-day team management and the overall upkeep of all technical services.
 
 Additionally, my role covers the technical aspects of broadcasting, including streaming delivery, radio automation and audio processing. Furthermore, I've led the effort to transition our previous legacy website from a PHP / jQuery stack to a Rails / React stack.
 

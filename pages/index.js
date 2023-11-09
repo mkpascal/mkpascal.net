@@ -26,7 +26,7 @@ export default function Home({ allPostsData, allProjectsData }) {
             </h2>
       </section>
       <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}}`}>
-            <h2 className={utilStyles.headingLg3}>Projects / Past Work</h2>
+            <h2 className={utilStyles.headingLg3}>Projects / Past Experiences</h2>
             <ul className={`${utilStyles.list} row`}>
                 {allProjectsData.map(({ id, title, logoPath }) => (
                     <li key={id} className={`${utilStyles.listItem} ${utilStyles.listInLine} col-3`}>

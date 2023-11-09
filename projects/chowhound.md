@@ -1,6 +1,6 @@
 ---
 title: 'Chowhound'
-order: 1
+order: 3
 category: 'Employment-related projects'
 categoryClass: 'bg-dark'
 logoPath: '/images/chowhoundLogo.png'
