@@ -29,7 +29,7 @@ export default function Home({ allPostsData, allProjectsData }) {
             <h2 className={utilStyles.headingLg3}>Projects / Past Experiences</h2>
             <ul className={`${utilStyles.list} row`}>
                 {allProjectsData.map(({ id, title, logoPath }) => (
-                    <li key={id} className={`${utilStyles.listItem} ${utilStyles.listInLine} col-2`}>
+                    <li key={id} className={`${utilStyles.listItem} ${utilStyles.listInLine} col-3`}>
                         <Link href={`/projects/${id}`}>
                             <Image
                                 src={`${logoPath}`}
