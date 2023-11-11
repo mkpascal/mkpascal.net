@@ -31,24 +31,45 @@ export default function Home({ allPostsData, allProjectsData }) {
       <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}}`}>
             <h2 className={utilStyles.headingLg3}>Projects / Past Experiences</h2>
             <ul className={`${utilStyles.list} row`}>
-                {allProjectsData.map(({ id, title, logoPath }) => (
+            {allProjectsData.map(({ id, title, logoPath }) => {
+                const hasComma = title.includes(',');
+                const [titleComma, urlComma] = title.split(',', 2);
+
+                return (
                     <li key={id} className={`${utilStyles.listItem} ${utilStyles.listInLine} col-3`}>
-                        <Link href={`/projects/${id}`}>
+                        {hasComma ? (
+                            <Link href={`${urlComma}`}>
                             <Image
                                 src={`${logoPath}`}
                                 className={utilStyles.borderProjects}
                                 height={128}
                                 width={128}
-                                alt={title}
+                                alt={titleComma}
                                 style={{
                                     width: '100%',
                                     height: 'auto',
                                 }}
                             />
-                        </Link>
+                            </Link>
+                        ) : (
+                            <Link href={`/projects/${id}`}>
+                                <Image
+                                    src={`${logoPath}`}
+                                    className={utilStyles.borderProjects}
+                                    height={128}
+                                    width={128}
+                                    alt={title}
+                                    style={{
+                                        width: '100%',
+                                        height: 'auto',
+                                    }}
+                                />
+                            </Link>
+                        )}
                     </li>
-                ))}
-            </ul>
+                );
+            })}
+        </ul>
       </section>
         <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
         <h2 className={utilStyles.headingLg4}>Articles</h2>
