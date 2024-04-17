@@ -1,6 +1,6 @@
 ---
 title: 'Website updated'
-date: '2023-08-25'
+date: '2023-05-01'
 ---
 
 It's been a while - but it was needed. I've just updated my personal website to highlight the projects I've accumulated throughout my career.
