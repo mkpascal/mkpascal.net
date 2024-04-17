@@ -22,6 +22,6 @@ logoPath: '/images/c9radioLogo.png'
 
 C9 Radio is an officially recognized French non-profit internet radio station that I'm deeply committed to maintaining. My responsibilities include day-to-day team management and the overall upkeep of all technical services.
 
-Additionally, my role covers the technical aspects of broadcasting, including streaming delivery, radio automation and audio processing. Furthermore, I've led the effort to transition our previous legacy website from a PHP / jQuery stack to a Rails / React stack.
+Additionally, my role covers the technical aspects of broadcasting, including streaming delivery, radio automation and audio processing. Furthermore, I've led the effort to transition our previous legacy website from a PHP / jQuery stack to a Rails / Turbo Hotwire + React stack.
 
 I'm also entrusted with the role of ensuring that the APIs, essential for the mobile apps, is always up to date.
