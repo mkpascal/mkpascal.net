@@ -20,7 +20,7 @@ logoPath: '/images/concrete1k.png'
 ![Separator](#portfolio-separator)
 [![Visit Website](https://img.shields.io/badge/🔗-CONCRETE_WEBSITE-10102b.svg?style=for-the-badge#portfolio-badge)](https://www.concrete.town)
 [![iOS Download](https://img.shields.io/badge/↓-IOS_DOWNLOAD-0D96F6.svg?style=for-the-badge#portfolio-badge)](https://www.concrete.town/ios)
-[![Android Download](https://img.shields.io/badge/↓-ANDROID_DOWNLOAD-3DDC84.svg?style=for-the-badge#portfolio-badge)](https://www.concrete.town/ios)
+[![Android Download](https://img.shields.io/badge/↓-ANDROID_DOWNLOAD-3DDC84.svg?style=for-the-badge#portfolio-badge)](https://www.concrete.town/android)
 ![Separator](#portfolio-separator)
 
 Concrete is an innovative social app that encourages exploration and discovery. Developed as a personal project by a small group of friends, Concrete leverages the latest technologies to empower users to effortlessly unearth dynamic, exciting spots and share their adventures with a vibrant community of likeminded individuals.
