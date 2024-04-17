@@ -16,12 +16,13 @@ export default function Home({ allPostsData, allProjectsData }) {
       <section className={`${utilStyles.headingMd}`}>
         <p className={utilStyles.topP}>
             I’m a Senior Software Engineer located in the San Francisco Bay Area, California, U.S.A. I'm fluent in English & French.
-            <span className={utilStyles.spanTop}>I'm actively exploring site engineering opportunities, with a preference for Rails positions. My resume can be downloaded <a href="/resume.pdf">here</a>. You can reach me via email at <a href="mailto:pmk@khot.us">pmk@khot.us</a>.</span>
+            <span className={utilStyles.spanTop}>I'm actively exploring back-end & full-stack site engineering opportunities, with a preference for Rails positions. My resume can be downloaded <a href="/resume.pdf">here</a>. You can reach me via email at <a href="mailto:pmk@khot.us">pmk@khot.us</a>.</span>
         </p>
       </section>
       <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
             <h2 className={utilStyles.headingLg2}>Connections
             <ul className={`${utilStyles.list} ${utilStyles.listConnections}`}>
+                    <li className={`${utilStyles.listItem} ${utilStyles.listInLine}`}><Link href={`mailto:pmk@khot.us`}><i className="fas fa-envelope-open-text"></i></Link></li>
                     <li className={`${utilStyles.listItem} ${utilStyles.listInLine}`}><Link href={`https://www.threads.net/@pmkpascal`}><i className="fas fa-at"></i></Link></li>
                     <li className={`${utilStyles.listItem} ${utilStyles.listInLine}`}><Link href={`https://www.twitter.com/mkpascal`}><i className="fab fa-twitter"></i></Link></li>
                     <li className={`${utilStyles.listItem} ${utilStyles.listInLine}`}><Link href={`https://www.linkedin.com/in/mkpascal`}><i className="fab fa-linkedin"></i></Link></li>
