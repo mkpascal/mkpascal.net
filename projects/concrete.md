@@ -6,7 +6,7 @@ categoryClass: 'bg-success'
 logoPath: '/images/concrete1k.png'
 ---
 
-![C9](/images/c9Screenshot.png#portfolio-image)
+![Concrete](/images/concrete_ad_1.jpeg#portfolio-image)
 
 ![BEDEV](https://img.shields.io/badge/Back_End_Development-red?style=for-the-badge&logoColor=white#portfolio-badge)
 ![FEDEV](https://img.shields.io/badge/Front_End_Development-green?style=for-the-badge&logoColor=white#portfolio-badge)
