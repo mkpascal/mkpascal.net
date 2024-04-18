@@ -8,18 +8,18 @@ export default function Resume() {
             <Head>
                 <title>{siteTitle}</title>
             </Head>
-            <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>                
+            <section className={`${utilStyles.headingMd} ${utilStyles.padding1px} ${styles.resumeContainer}`}>
                 {/* Resume Content */}
                 <div className={utilStyles.list}>
 
                     {/* Contact */}
                     <div>
-                        <p>↓ <a href="https://www.mkpascal.net/resume.pdf">Download</a> PDF Resume</p>
+                        <p><Link href={`https://www.mkpascal.net/resume.pdf`}><i className="fas fa-file-download"></i></Link></li> Download PDF Resume</p>
                     </div>
                     
                     {/* Contact */}
                     <div>
-                        <p>✉ pmk@khot.us</p>
+                        <p><Link href={`mailto:pmk@khot.us`}><i className="fas fa-envelope-open-text"></i></Link></li> E-mail Contact</p>
                     </div>
                     
                     {/* Experience */}
