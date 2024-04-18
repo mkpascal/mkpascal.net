@@ -21,7 +21,7 @@ export default function Resume() {
                     
                     {/* Contact */}
                     <div>
-                        <p className={styles.topLink}><Link href={`mailto:pmk@khot.us`}><i className="fas fa-envelope-open-text"></i></Link> E-mail Contact</p>
+                        <p className={styles.topLink}><Link href={`mailto:pmk@khot.us`}><i className="fas fa-envelope-open-text"></i></Link> pmk@khot.us</p>
                     </div>
                     
                     {/* Experience */}
