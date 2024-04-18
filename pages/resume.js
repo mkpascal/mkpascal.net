@@ -8,11 +8,14 @@ export default function Resume() {
             <Head>
                 <title>{siteTitle}</title>
             </Head>
-            <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
-                <h2 className={utilStyles.headingLg2}>Pascal MUANG KHOT - Resume</h2>
-                
+            <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>                
                 {/* Resume Content */}
                 <div className={utilStyles.list}>
+
+                    {/* Contact */}
+                    <div>
+                        <p>↓ <a href="https://www.mkpascal.net/resume.pdf">Download</a> PDF Resume</p>
+                    </div>
                     
                     {/* Contact */}
                     <div>
