@@ -16,7 +16,7 @@ export default function Home({ allPostsData, allProjectsData }) {
       <section className={`${utilStyles.headingMd}`}>
         <p className={utilStyles.topP}>
             I’m a Senior Software Engineer located in the San Francisco Bay Area, California, U.S.A. I'm fluent in English & French.
-            <span className={utilStyles.spanTop}>I'm actively exploring back-end & full-stack site engineering opportunities, with a preference for Rails positions. My resume can be downloaded <a href="/resume.pdf">here</a>. You can reach me via email at <a href="mailto:pmk@khot.us">pmk@khot.us</a>.</span>
+            <span className={utilStyles.spanTop}>I'm actively exploring back-end & full-stack site engineering opportunities, with a preference for Rails positions. My resume is accessible <a href="https://www.mkpascal.net/resume">here</a>. You can reach me via email at <a href="mailto:pmk@khot.us">pmk@khot.us</a>.</span>
         </p>
       </section>
       <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
