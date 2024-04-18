@@ -14,12 +14,12 @@ export default function Resume() {
 
                     {/* Contact */}
                     <div>
-                        <p><Link href={`https://www.mkpascal.net/resume.pdf`}><i className="fas fa-file-download"></i></Link></li> Download PDF Resume</p>
+                        <p><Link href={`https://www.mkpascal.net/resume.pdf`}><i className="fas fa-file-download"></i></Link> Download PDF Resume</p>
                     </div>
                     
                     {/* Contact */}
                     <div>
-                        <p><Link href={`mailto:pmk@khot.us`}><i className="fas fa-envelope-open-text"></i></Link></li> E-mail Contact</p>
+                        <p><Link href={`mailto:pmk@khot.us`}><i className="fas fa-envelope-open-text"></i></Link> E-mail Contact</p>
                     </div>
                     
                     {/* Experience */}
