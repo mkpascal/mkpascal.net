@@ -13,3 +13,11 @@
 .resumeContainer p {
     font-size: 0.8em;
 }
+
+.topLink {
+    font-size: 1.2em;
+}
+
+.resumeContainer h3 {
+    padding-top: 20px;
+}
