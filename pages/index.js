@@ -22,12 +22,11 @@ export default function Home({ allPostsData, allProjectsData }) {
       <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
             <h2 className={utilStyles.headingLg2}>Connections
             <ul className={`${utilStyles.list} ${utilStyles.listConnections}`}>
-                    <li className={`${utilStyles.listItem} ${utilStyles.listInLine}`}><Link href={`mailto:pmk@khot.us`}><i className="fas fa-envelope-open-text"></i></Link></li>
+                    <li className={`${utilStyles.listItem} ${utilStyles.listInLine}`}><Link href={`mailto:pmk@khot.us`}><i className="fas fa-envelope"></i></Link></li>
                     <li className={`${utilStyles.listItem} ${utilStyles.listInLine}`}><Link href={`https://www.threads.net/@pmkpascal`}><i className="fas fa-at"></i></Link></li>
                     <li className={`${utilStyles.listItem} ${utilStyles.listInLine}`}><Link href={`https://www.twitter.com/mkpascal`}><i className="fab fa-twitter"></i></Link></li>
                     <li className={`${utilStyles.listItem} ${utilStyles.listInLine}`}><Link href={`https://www.linkedin.com/in/mkpascal`}><i className="fab fa-linkedin"></i></Link></li>
                     <li className={`${utilStyles.listItem} ${utilStyles.listInLine}`}><Link href={`https://github.com/mkpascal`}><i className="fab fa-github"></i></Link></li>
-                    <li className={`${utilStyles.listItem} ${utilStyles.listInLine}`}><Link href={`mailto:hello@khot.us`}><i className="fas fa-envelope"></i></Link></li>
             </ul>
             </h2>
       </section>
