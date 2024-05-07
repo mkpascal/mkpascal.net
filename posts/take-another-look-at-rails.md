@@ -21,8 +21,6 @@ Together, Turbo and Stimulus offer a powerful combination that can replace React
 
 ## Give it another try!
 
-Ruby on Rails may not be the newest kid on the block, but it's a technology that has aged like a fine wine. With its maturity, stability, and innovative features like Hotwire and Turbo, it's a framework that continues to delight developers and power some of the world's most significant applications. 
+Ruby on Rails may not be the newest kid on the block, but it's a technology that has aged like a fine wine. With its maturity, stability, and innovative features like Hotwire and Turbo, it's a framework that continues to delight developers and power some of the world's most significant applications. *Also, the rumors of Rails' demise are greatly exaggerated - a sold-out Rails World 2024 conference is all the proof you need.*
 
-**The rumors of Rails' demise are greatly exaggerated - a sold-out Rails World 2024 conference is all the proof you need.**
-
-If you haven't already, give Rails a try. If you did in the past, take it for a spin again. I promise you won't be disappointed!
+**If you haven't already, give Rails a try. If you did in the past, take it for a spin again. I promise you won't be disappointed!**
