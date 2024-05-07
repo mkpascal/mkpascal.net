@@ -73,6 +73,15 @@ export default function Home({ allPostsData, allProjectsData }) {
             })}
         </ul>
       </section>
+      <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}}`}>
+            <h2 className={utilStyles.headingLg3}>Software</h2>
+            <ul className={`${utilStyles.list} row`}>
+            <li>Apple App Store: All Software Listings</li>
+            <li>Google Play Store: All Software Listing</li>
+            <li>Qust: A Simple And Efficient Streaming Radio Player</li>
+            <li>RP2T: A Companion App For The Rodecaster Pro II</li>
+            </ul>
+      </section>
         <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
         <h2 className={utilStyles.headingLg4}>Articles</h2>
         <ul className={utilStyles.list}>
