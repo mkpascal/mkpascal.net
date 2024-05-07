@@ -88,7 +88,7 @@ export default function Home({ allPostsData, allProjectsData }) {
             <li><Link className={utilStyles.readMoreLink} href="/articles">Read More →</Link></li>
         </ul>
       </section>
-      <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}}`}>
+      <section style={{ margin: '50px 0 20px' }} className={`${utilStyles.headingMd} ${utilStyles.padding1px}}`}>
             <h2 className={utilStyles.headingLg3}>Software</h2>
             <ul className={`${utilStyles.list} row`}>
             <li className={`${utilStyles.listItem} ${utilStyles.listInLine}`}> 
