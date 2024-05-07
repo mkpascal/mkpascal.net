@@ -1,6 +1,6 @@
 ---
 title: Take Another Look at Rails (or Try It for the First Time)
-date: '2024-05-05'
+date: '2024-04-05'
 ---
 
 As a seasoned software engineer, I've had the privilege of working with various programming languages and frameworks over the years. But, despite the allure of newer technologies, I always find myself coming back to Ruby on Rails. This framework has a special something that makes it a pleasure to use. When combined with Ruby, the language, it's a winning combination that's hard to beat.
