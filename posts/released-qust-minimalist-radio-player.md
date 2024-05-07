@@ -1,9 +1,9 @@
 ---
-title: Just released Qust. A Minimalist Streaming Radio Player.
+title: Just Released A Minimalist Streaming Radio Player
 date: '2023-12-28'
 ---
 
-I'm excited to share a software I've made in my free time - Qust, a simple and efficient streaming player. As someone who values minimalism and performance, I created Qust to provide a seamless streaming experience without the bloat.
+I'm excited to share a software I've made in my free time - Qust, a simple and efficient streaming radio player. As someone who values minimalism and performance, I created Qust to provide a seamless streaming experience without the bloat.
 
 ![Qust Player](https://raw.githubusercontent.com/mkpascal/qust/main/assets/screenshot.png)
 
