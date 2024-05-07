@@ -74,7 +74,7 @@ export default function Home({ allPostsData, allProjectsData }) {
         </ul>
       </section>
         <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
-        <h2 className={utilStyles.headingLg4}>Articles <small><Link className={utilStyles.readMoreLink} href="/articles">Read More →</Link></small></h2>
+        <h2 className={utilStyles.headingLg4}>Articles <small><Link className={utilStyles.readMoreLink} style={{ display: 'inline', color: '#4d4d4d' }} href="/articles">Read More →</Link></small></h2>
         <ul className={utilStyles.list}>
           {allPostsData.slice(0,3).map(({ id, date, title }) => (
             <li className={utilStyles.listItem} key={id}>
@@ -87,7 +87,7 @@ export default function Home({ allPostsData, allProjectsData }) {
           ))}
         </ul>
       </section>
-      <section style={{ margin: '50px 0 20px' }} className={`${utilStyles.headingMd} ${utilStyles.padding1px}}`}>
+      <section style={{ margin: '35px 0 20px' }} className={`${utilStyles.headingMd} ${utilStyles.padding1px}}`}>
             <h2 className={utilStyles.headingLg3}>Software</h2>
             <ul className={`${utilStyles.list} row`}>
             <li className={`${utilStyles.listItem} ${utilStyles.listInLine}`}> 
