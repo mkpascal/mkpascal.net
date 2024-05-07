@@ -18,7 +18,7 @@ export default function Layout({ children, home }) {
         />
         <meta
           property="og:image"
-          content="https://www.mkpascal.net/images/profile23.png"
+          content="https://www.mkpascal.net/images/PASCAL_LAST_MAY.jpg"
         />
         <meta name="og:title" content={siteTitle} />
         <meta name="twitter:card" content="summary_large_image" />
@@ -28,7 +28,7 @@ export default function Layout({ children, home }) {
           <>
             <Image
               priority
-              src="/images/profile23.png"
+              src="/images/PASCAL_LAST_MAY.jpg"
               className={utilStyles.borderCircle}
               height={144}
               width={144}
