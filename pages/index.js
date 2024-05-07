@@ -76,10 +76,10 @@ export default function Home({ allPostsData, allProjectsData }) {
       <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}}`}>
             <h2 className={utilStyles.headingLg3}>Software</h2>
             <ul className={`${utilStyles.list} row`}>
-            <li>Apple App Store: All Software Listings</li>
-            <li>Google Play Store: All Software Listing</li>
-            <li>Qust: A Simple And Efficient Streaming Radio Player</li>
-            <li>RP2T: A Companion App For The Rodecaster Pro II</li>
+            <li className={`${utilStyles.listItem} ${utilStyles.listInLine}`}><Link href={`https://www.twitter.com/mkpascal`}><i className="fab fa-apple"></i> Apple App Store: All Software Listings</Link></li>
+            <li className={`${utilStyles.listItem} ${utilStyles.listInLine}`}><Link href={`https://www.twitter.com/mkpascal`}><i className="fab fa-google"></i> Google Play Store: All Software Listings</Link></li>
+            <li className={`${utilStyles.listItem} ${utilStyles.listInLine}`}><Link href={`https://www.twitter.com/mkpascal`}><i className="fas fa-music"></i> Qust: A Simple And Efficient Streaming Radio Player</Link></li>
+            <li className={`${utilStyles.listItem} ${utilStyles.listInLine}`}><Link href={`https://www.twitter.com/mkpascal`}><i className="fas fa-box"></i> RP2T: A Companion App For The Rodecaster Pro II</Link></li>
             </ul>
       </section>
         <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
