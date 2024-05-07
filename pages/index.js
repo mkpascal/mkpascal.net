@@ -84,8 +84,8 @@ export default function Home({ allPostsData, allProjectsData }) {
                 <Image src={`https://www.mkpascal.net/images/gplaysoft.png`} height={200} width={59} style={{ width: '40%', height: 'auto', float: 'left', margin: '0 0 15px 0' }} />
               </Link>              
             </li>
-            <li className={`${utilStyles.listItem} ${utilStyles.listInLine}`}><Link href={`https://github.com/mkpascal/qust/releases`}><i className="fas fa-music"></i>  Qust </Link><small style="color:#666">A Simple And Efficient Streaming Radio Player</small></li>
-            <li className={`${utilStyles.listItem} ${utilStyles.listInLine}`}><Link href={`https://www.c9.fr/files/software/R2PT-win32-x64-build-0002.zip`}><i className="fas fa-box"></i>  R2PT </Link><small style="color:#666">A Companion App For The Rodecaster Pro II</small></li>
+            <li className={`${utilStyles.listItem} ${utilStyles.listInLine}`}><Link href={`https://github.com/mkpascal/qust/releases`}><i className="fas fa-music"></i>  Qust </Link><small style='color:#666;'>A Simple And Efficient Streaming Radio Player</small></li>
+            <li className={`${utilStyles.listItem} ${utilStyles.listInLine}`}><Link href={`https://www.c9.fr/files/software/R2PT-win32-x64-build-0002.zip`}><i className="fas fa-box"></i>  R2PT </Link><small style='color:#666;'>A Companion App For The Rodecaster Pro II</small></li>
             </ul>
       </section>
         <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
