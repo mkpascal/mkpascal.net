@@ -91,7 +91,7 @@ export default function Home({ allPostsData, allProjectsData }) {
             <h2 className={utilStyles.headingLg3}>Software</h2>
             <ul className={`${utilStyles.list} row`}>
             <li className={`${utilStyles.listItem} ${utilStyles.listInLine}`}> 
-              <Link href={`https://apps.apple.com/us/developer/pascal-muang-khot/id945834562`}>
+              <Link target="_blank" href={`https://apps.apple.com/us/developer/pascal-muang-khot/id945834562`}>
                 <Image src={`https://www.mkpascal.net/images/astoresoft.png`} height={200} width={59} style={{ width: '40%', height: 'auto', float: 'left', margin: '0 30px 0 0' }} />
               </Link>
               <Link href={`https://play.google.com/store/apps/dev?id=8406828041468545861`}>
