@@ -23,10 +23,10 @@ export default function Home({ allPostsData, allProjectsData }) {
             <h2 className={utilStyles.headingLg2}>Connections
             <ul className={`${utilStyles.list} ${utilStyles.listConnections}`}>
                     <li className={`${utilStyles.listItem} ${utilStyles.listInLine}`}><Link href={`mailto:pmk@khot.us`}><i className="fas fa-envelope"></i></Link></li>
-                    <li className={`${utilStyles.listItem} ${utilStyles.listInLine}`}><Link href={`https://www.threads.net/@pmkpascal`}><i className="fas fa-at"></i></Link></li>
-                    <li className={`${utilStyles.listItem} ${utilStyles.listInLine}`}><Link href={`https://www.twitter.com/mkpascal`}><i className="fab fa-twitter"></i></Link></li>
-                    <li className={`${utilStyles.listItem} ${utilStyles.listInLine}`}><Link href={`https://www.linkedin.com/in/mkpascal`}><i className="fab fa-linkedin"></i></Link></li>
-                    <li className={`${utilStyles.listItem} ${utilStyles.listInLine}`}><Link href={`https://github.com/mkpascal`}><i className="fab fa-github"></i></Link></li>
+                    <li className={`${utilStyles.listItem} ${utilStyles.listInLine}`}><Link target="_blank" href={`https://www.threads.net/@pmkpascal`}><i className="fas fa-at"></i></Link></li>
+                    <li className={`${utilStyles.listItem} ${utilStyles.listInLine}`}><Link target="_blank" href={`https://www.twitter.com/mkpascal`}><i className="fab fa-twitter"></i></Link></li>
+                    <li className={`${utilStyles.listItem} ${utilStyles.listInLine}`}><Link target="_blank" href={`https://www.linkedin.com/in/mkpascal`}><i className="fab fa-linkedin"></i></Link></li>
+                    <li className={`${utilStyles.listItem} ${utilStyles.listInLine}`}><Link target="_blank" href={`https://github.com/mkpascal`}><i className="fab fa-github"></i></Link></li>
             </ul>
             </h2>
       </section>
@@ -94,12 +94,12 @@ export default function Home({ allPostsData, allProjectsData }) {
               <Link target="_blank" href={`https://apps.apple.com/us/developer/pascal-muang-khot/id945834562`}>
                 <Image src={`https://www.mkpascal.net/images/astoresoft.png`} height={200} width={59} style={{ width: '40%', height: 'auto', float: 'left', margin: '0 30px 0 0' }} />
               </Link>
-              <Link href={`https://play.google.com/store/apps/dev?id=8406828041468545861`}>
+              <Link target="_blank" href={`https://play.google.com/store/apps/dev?id=8406828041468545861`}>
                 <Image src={`https://www.mkpascal.net/images/gplaysoft.png`} height={200} width={59} style={{ width: '40%', height: 'auto', float: 'left', margin: '0 0 15px 0' }} />
               </Link>              
             </li>
-            <li className={`${utilStyles.listItem} ${utilStyles.listInLine}`}><Link href={`https://github.com/mkpascal/qust/releases`}><i className="fas fa-music"></i>  Qust </Link><small style={{color: '#666', fontSize: '0.75em'}}>Simple And Efficient Streaming Radio Player ( <i className="fab fa-windows"></i> / <i className="fab fa-apple"></i> )</small></li>
-            <li className={`${utilStyles.listItem} ${utilStyles.listInLine}`}><Link href={`https://www.c9.fr/files/software/R2PT-win32-x64-build-0002.zip`}><i className="fas fa-box"></i>  R2PT </Link><small style={{color: '#666', fontSize: '0.75em'}}>Companion App For The Rodecaster Pro 2 ( <i className="fab fa-windows"></i> )</small></li>
+            <li className={`${utilStyles.listItem} ${utilStyles.listInLine}`}><Link target="_blank" href={`https://github.com/mkpascal/qust/releases`}><i className="fas fa-music"></i>  Qust </Link><small style={{color: '#666', fontSize: '0.75em'}}>Simple And Efficient Streaming Radio Player ( <i className="fab fa-windows"></i> / <i className="fab fa-apple"></i> )</small></li>
+            <li className={`${utilStyles.listItem} ${utilStyles.listInLine}`}><Linktarget="_blank" href={`https://www.c9.fr/files/software/R2PT-win32-x64-build-0002.zip`}><i className="fas fa-box"></i>  R2PT </Link><small style={{color: '#666', fontSize: '0.75em'}}>Companion App For The Rodecaster Pro 2 ( <i className="fab fa-windows"></i> )</small></li>
             </ul>
       </section>              
     </Layout>
