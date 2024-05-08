@@ -99,7 +99,7 @@ export default function Home({ allPostsData, allProjectsData }) {
               </Link>              
             </li>
             <li className={`${utilStyles.listItem} ${utilStyles.listInLine}`}><Link href={`https://github.com/mkpascal/qust/releases`}><i className="fas fa-music"></i>  Qust </Link><small style={{color: '#666'}}>Simple And Efficient Streaming Radio Player ( <i className="fas fab-windows"></i> / <i className="fab fa-apple"></i> )</small></li>
-            <li className={`${utilStyles.listItem} ${utilStyles.listInLine}`}><Link href={`https://www.c9.fr/files/software/R2PT-win32-x64-build-0002.zip`}><i className="fas fa-box"></i>  R2PT </Link><small style={{color: '#666'}}>Companion App For The Rodecaster Pro 2 ( <i className="fas fab-windows"></i> / <i className="fab fa-apple"></i> )</small></li>
+            <li className={`${utilStyles.listItem} ${utilStyles.listInLine}`}><Link href={`https://www.c9.fr/files/software/R2PT-win32-x64-build-0002.zip`}><i className="fas fa-box"></i>  R2PT </Link><small style={{color: '#666'}}>Companion App For The Rodecaster Pro 2 ( <i className="fas fab-windows"></i> )</small></li>
             </ul>
       </section>              
     </Layout>
