@@ -132,16 +132,16 @@ export default function Resume() {
                                 <div>
                                     <h4>Previous Internships</h4>
                                     <div>
-                                        <p>iTLiGENT (Paris, France) - Software Engineer - Full-Stack Developer</p>
-                                        <p>2011-2012</p>
+                                        <p>iTLiGENT (Paris, France) - Software Engineer - Full-Stack Developer
+                                        <br/>2011-2012</p>
                                     </div>
                                     <div>
-                                        <p>Milky Interactive (Paris, France) - Software Engineer - Front-End Developer</p>
-                                        <p>Summer 2010</p>
+                                        <p>Milky Interactive (Paris, France) - Software Engineer - Front-End Developer
+                                        <br/>Summer 2010</p>
                                     </div>
                                     <div>
-                                        <p>Vigilio (Paris, France) - Software Engineer - Front-End Developer</p>
-                                        <p>Summer 2009</p>
+                                        <p>Vigilio (Paris, France) - Software Engineer - Front-End Developer
+                                        <br/>Summer 2009</p>
                                     </div>
                                 </div>
                             </div>
