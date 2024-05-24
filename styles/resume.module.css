@@ -24,6 +24,7 @@
     font-size: 0.9em;
     display: flex;
     flex-direction: column;
+    gap: 2rem; /* Add spacing between sections */
 }
 
 .twoColumnContainer {
@@ -37,18 +38,9 @@
     min-width: 300px;
 }
 
-.topLink {
-    display: inline-block;
-    margin-right: 1rem;
-}
-
 /* Media query for smaller screens */
 @media (max-width: 768px) {
     .twoColumnContainer {
         flex-direction: column;
-    }
-
-    .leftColumn, .rightColumn {
-        margin-right: 0;
     }
 }
