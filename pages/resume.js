@@ -36,8 +36,8 @@ export default function Resume() {
                                     <li>Implemented a transcoding system and CMS and commerce features.</li>
                                     <li>Contributed to API development for improved front-end usability.</li>
                                 </ul>
-                                <p><strong>Methods:</strong> Code reviews (PR), Pair programming, Agile & Waterfall methods.</p>
-                                <p><strong>Technologies:</strong> PHP, Symfony, GCP, MongoDB, MySQL, Solr, Memcached, VueJS, jQuery, Docker.</p>
+                                <p><strong>Methods:</strong> Code reviews (PR), Pair programming, Agile & Waterfall methods.
+                                <br/><strong>Technologies:</strong> PHP, Symfony, GCP, MongoDB, MySQL, Solr, Memcached, VueJS, jQuery, Docker.</p>
                             </div>
                             <div>
                                 <h4>Red Ventures (CNET / ZDNET) - Software Engineer - Full-Stack Developer</h4>
@@ -47,8 +47,8 @@ export default function Resume() {
                                     <li>Oversaw front door, articles, and ads features for both brands.</li>
                                     <li>Enhanced CMS with new features and commerce functionalities.</li>
                                 </ul>
-                                <p><strong>Methods:</strong> Code reviews (PR), Agile & Waterfall methods.</p>
-                                <p><strong>Technologies:</strong> Ruby on Rails, PHP, Symfony, MongoDB, MySQL, Solr, Memcached, VueJS, jQuery, Docker.</p>
+                                <p><strong>Methods:</strong> Code reviews (PR), Agile & Waterfall methods.
+                                <br/><strong>Technologies:</strong> Ruby on Rails, PHP, Symfony, MongoDB, MySQL, Solr, Memcached, VueJS, jQuery, Docker.</p>
                             </div>
                             <div>
                                 <h4>Paramount ViacomCBS (Chowhound) - Software Engineer - Back-End Developer</h4>
@@ -58,8 +58,8 @@ export default function Resume() {
                                     <li>Successfully migrated the entire stack from the datacenter to GCP.</li>
                                     <li>Implemented Place System with 3rd party integration. Dockerized our legacy stack and optimized it for scalability.</li>
                                 </ul>
-                                <p><strong>Methods:</strong> Pair programming, Code reviews (PR), Full-on scrum methodology.</p>
-                                <p><strong>Technologies:</strong> Ruby on Rails, Resque, MySQL, Redis, Memcached, Bootstrap, Docker, Heroku, React, AWS, jQuery.</p>
+                                <p><strong>Methods:</strong> Pair programming, Code reviews (PR), Full-on scrum methodology.
+                                <br/><strong>Technologies:</strong> Ruby on Rails, Resque, MySQL, Redis, Memcached, Bootstrap, Docker, Heroku, React, AWS, jQuery.</p>
                             </div>
                             <div>
                                 <h4>Trulify - Software Engineer - Full-Stack Developer</h4>
@@ -69,8 +69,8 @@ export default function Resume() {
                                     <li>Integrated custom APIs with payroll service bureaus and implemented Chargify for subscription billing.</li>
                                     <li>Designed secure server/client solution for uniform data exchange with payroll bureaus, handling sensitive PII.</li>
                                 </ul>
-                                <p><strong>Methods:</strong> Code reviews (PR), Strict git flow, Agile (IPM/Stand-up).</p>
-                                <p><strong>Technologies:</strong> Ruby on Rails, Sidekiq, Bootstrap, Heroku, AWS, jQuery.</p>
+                                <p><strong>Methods:</strong> Code reviews (PR), Strict git flow, Agile (IPM/Stand-up).
+                                <br/><strong>Technologies:</strong> Ruby on Rails, Sidekiq, Bootstrap, Heroku, AWS, jQuery.</p>
                             </div>
                             <div className={styles.langResume}>
                             <h3>LANGUAGES</h3>
