@@ -1,19 +1,17 @@
 import Head from 'next/head';
 import Link from 'next/link';
-import Layout, { siteTitle } from '../components/layout';
+import LayoutLarge, { siteTitle } from '../components/layout-large';
 import utilStyles from '../styles/utils.module.css';
 import styles from '../styles/resume.module.css';
 
 export default function Resume() {
     return (
-        <Layout>
+        <LayoutLarge>
             <Head>
                 <title>{siteTitle}</title>
             </Head>
             <section className={`${utilStyles.headingMd} ${utilStyles.padding1px} ${styles.resumeContainer}`}>
-                {/* Resume Content */}
                 <div className={utilStyles.list}>
-                    {/* Download and Contact */}
                     <div>
                         <p className={styles.topLink}>
                             <Link href={`https://www.mkpascal.net/resume.pdf`}>
@@ -27,9 +25,7 @@ export default function Resume() {
                         </p>
                     </div>
 
-                    {/* Two-column layout for Experience and Skills */}
                     <div className={styles.twoColumnContainer}>
-                        {/* Experience */}
                         <div className={styles.leftColumn}>
                             <h3>EXPERIENCE</h3>
                             <div>
@@ -77,8 +73,6 @@ export default function Resume() {
                                 <p><strong>Technologies:</strong> Ruby on Rails, Sidekiq, Bootstrap, Heroku, AWS, jQuery.</p>
                             </div>
                         </div>
-
-                        {/* Skills */}
                         <div className={styles.rightColumn}>
                             <h3>SKILLS</h3>
                             <div>
@@ -120,31 +114,29 @@ export default function Resume() {
                             <div>
                                 <h4>Project / Tech Management</h4>
                                 <p>Gitflow, Agile, Scrum, Jira, Pivotal Tracker</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    {/* Education and Languages */}
-                    <div>
-                        <h3>EDUCATION</h3>
-                        <div>
-                            <h4>SUPINFO University (Paris, France) - Bachelor of Science (B.Sc.) with honors in Computer Science</h4>
-                            <p>2008-2013</p>
-                            <p>Throughout my education in computer science, I pursued many internships.</p>
-                        </div>
-                        <div>
-                            <h4>Previous Internships</h4>
+                            </div> 
                             <div>
-                                <p>iTLiGENT (Paris, France) - Software Engineer - Full-Stack Developer</p>
-                                <p>2011-2012</p>
-                            </div>
-                            <div>
-                                <p>Milky Interactive (Paris, France) - Software Engineer - Front-End Developer</p>
-                                <p>Summer 2010</p>
-                            </div>
-                            <div>
-                                <p>Vigilio (Paris, France) - Software Engineer - Front-End Developer</p>
-                                <p>Summer 2009</p>
+                                <h3>EDUCATION</h3>
+                                <div>
+                                    <h4>SUPINFO University (Paris, France) - Bachelor of Science (B.Sc.) with honors in Computer Science</h4>
+                                    <p>2008-2013</p>
+                                    <p>Throughout my education in computer science, I pursued many internships.</p>
+                                </div>
+                                <div>
+                                    <h4>Previous Internships</h4>
+                                    <div>
+                                        <p>iTLiGENT (Paris, France) - Software Engineer - Full-Stack Developer</p>
+                                        <p>2011-2012</p>
+                                    </div>
+                                    <div>
+                                        <p>Milky Interactive (Paris, France) - Software Engineer - Front-End Developer</p>
+                                        <p>Summer 2010</p>
+                                    </div>
+                                    <div>
+                                        <p>Vigilio (Paris, France) - Software Engineer - Front-End Developer</p>
+                                        <p>Summer 2009</p>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -158,6 +150,6 @@ export default function Resume() {
                     </div>
                 </div>
             </section>
-        </Layout>
+        </LayoutLarge>
     );
 }
