@@ -1,5 +1,7 @@
 .resumeContainer {
     font-size: 0.9em;
+    display: flex;
+    flex-direction: column;
 }
 
 .resumeContainer h4 {
@@ -22,11 +24,6 @@
 .resumeContainer h3 {
   padding-top: 25px;
   padding-bottom: 15px;
-}
-
-.resumeContainer {
-    display: flex;
-    flex-direction: column;
 }
 
 .twoColumnContainer {
