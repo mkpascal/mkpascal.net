@@ -23,3 +23,42 @@
   padding-top: 25px;
   padding-bottom: 15px;
 }
+
+.resumeContainer {
+    display: flex;
+    flex-direction: column;
+}
+
+.twoColumnContainer {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+    flex-wrap: wrap; /* Allow columns to wrap on smaller screens */
+}
+
+.leftColumn, .rightColumn {
+    flex: 1;
+    margin-right: 1rem;
+    min-width: 300px; /* Ensure minimum width for each column */
+}
+
+.rightColumn {
+    margin-right: 0;
+}
+
+.topLink {
+    display: inline-block;
+    margin-right: 1rem;
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+    .twoColumnContainer {
+        flex-direction: column;
+    }
+
+    .leftColumn, .rightColumn {
+        margin-right: 0;
+        margin-bottom: 1rem; /* Add spacing between stacked columns */
+    }
+}
