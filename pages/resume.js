@@ -15,8 +15,16 @@ export default function Resume() {
                 <div className={utilStyles.list}>
                     {/* Download and Contact */}
                     <div>
-                        <p className={styles.topLink}><Link href={`https://www.mkpascal.net/resume.pdf`}><i className="fas fa-file-download"></i></Link> Download PDF Resume</p>
-                        <p className={styles.topLink}><Link href={`mailto:pmk@khot.us`}><i className="fas fa-envelope-open-text"></i></Link> pmk@khot.us</p>
+                        <p className={styles.topLink}>
+                            <Link href={`https://www.mkpascal.net/resume.pdf`}>
+                                <i className="fas fa-file-download"></i> Download PDF Resume
+                            </Link>
+                        </p>
+                        <p className={styles.topLink}>
+                            <Link href={`mailto:pmk@khot.us`}>
+                                <i className="fas fa-envelope-open-text"></i> pmk@khot.us
+                            </Link>
+                        </p>
                     </div>
 
                     {/* Two-column layout for Experience and Skills */}
