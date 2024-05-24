@@ -43,6 +43,23 @@
     .twoColumnContainer {
         flex-direction: column;
     }
+    .langResume {
+        display: none;
+    }
+
+    .langResumeBottom {
+        display: block;
+    }
+}
+
+/* Media query for desktop */
+@media (min-width: 768px) {
+    .langResume {
+        display: block;
+    }
+    .langResumeBottom {
+        display: none;
+    }
 }
 
 .container {

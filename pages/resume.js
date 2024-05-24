@@ -72,8 +72,8 @@ export default function Resume() {
                                 <p><strong>Methods:</strong> Code reviews (PR), Strict git flow, Agile (IPM/Stand-up).</p>
                                 <p><strong>Technologies:</strong> Ruby on Rails, Sidekiq, Bootstrap, Heroku, AWS, jQuery.</p>
                             </div>
-                            <div>
-                                <h3>LANGUAGES</h3>
+                            <div className={styles.langResume}>
+                            <h3>LANGUAGES</h3>
                                 <div>
                                     <p>English - Bilingual Proficiency</p>
                                     <p>French - Native Language</p>
@@ -145,6 +145,14 @@ export default function Resume() {
                                     </div>
                                 </div>
                             </div>
+                        </div>
+                    </div>
+
+                    <div className={styles.langResumeBottom}>
+                        <h3>LANGUAGES</h3>
+                        <div>
+                            <p>English - Bilingual Proficiency</p>
+                            <p>French - Native Language</p>
                         </div>
                     </div>
                 </div>
