@@ -29,7 +29,7 @@
 
 .twoColumnContainer {
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: unset;
     gap: 2rem; /* Add spacing between columns */
 }
 
@@ -44,3 +44,8 @@
         flex-direction: column;
     }
 }
+
+.container {
+  max-width: 70rem;
+}
+
