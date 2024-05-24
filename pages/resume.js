@@ -14,13 +14,13 @@ export default function Resume() {
                 <div className={utilStyles.list}>
                     <div>
                         <p className={styles.topLink}>
-                            <Link href={`https://www.mkpascal.net/resume.pdf`}>
+                            <Link href={`https://www.mkpascal.net/ws_resume.pdf`}>
                                 <i className="fas fa-file-download"></i> Download PDF Resume
                             </Link>
                         </p>
                         <p className={styles.topLink}>
                             <Link href={`mailto:pmk@khot.us`}>
-                                <i className="fas fa-envelope-open-text"></i> pmk@khot.us
+                                <i className="fas fa-envelope-open-text"></i> Contact me at pmk@khot.us
                             </Link>
                         </p>
                     </div>
@@ -32,7 +32,7 @@ export default function Resume() {
                                 <h4>Fandom (Metacritic / TV Guide) - Software Engineer - Back-End Developer</h4>
                                 <p>2022 - 2023</p>
                                 <ul>
-                                    <li>Managed the high-volume CMS powering Metacritic and TV Guide sites.</li>
+                                    <li>Managed the high-volume CMS powering Metacritic and TV Guide sites reaching millions of website and app users.</li>
                                     <li>Implemented a transcoding system and CMS and commerce features.</li>
                                     <li>Contributed to API development for improved front-end usability.</li>
                                 </ul>
@@ -88,7 +88,7 @@ export default function Resume() {
                             </div>
                             <div>
                                 <h4>Frameworks / Environments</h4>
-                                <p>Rails, Node.js, Express, Sinatra, Bootstrap, Symfony, jQuery, VueJS, React, Electron, Flutter</p>
+                                <p>Rails, Node.js, Express, Sinatra, Bootstrap, Next.js, jQuery, React, Electron, Flutter</p>
                             </div>
                             <div>
                                 <h4>Libraries / Services</h4>
@@ -96,7 +96,7 @@ export default function Resume() {
                             </div>
                             <div>
                                 <h4>AI / ML</h4>
-                                <p>OpenAI, LocalAI, Stable Diffusion</p>
+                                <p>OpenAI, LocalAI, llama.cpp, Stable Diffusion</p>
                             </div>
                             <div>
                                 <h4>QA & CI/CD</h4>
