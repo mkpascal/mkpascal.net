@@ -50,6 +50,10 @@
     .langResumeBottom {
         display: block;
     }
+
+    .rightColumn {
+        text-align: left;
+    }
 }
 
 /* Media query for desktop */
@@ -59,6 +63,9 @@
     }
     .langResumeBottom {
         display: none;
+    }
+    .rightColumn {
+        text-align: right;
     }
 }
 
