@@ -13,7 +13,6 @@ export default function Resume() {
             <section className={`${utilStyles.headingMd} ${utilStyles.padding1px} ${styles.resumeContainer}`}>
                 {/* Resume Content */}
                 <div className={utilStyles.list}>
-
                     {/* Download and Contact */}
                     <div>
                         <p className={styles.topLink}><Link href={`https://www.mkpascal.net/resume.pdf`}><i className="fas fa-file-download"></i></Link> Download PDF Resume</p>
@@ -25,7 +24,6 @@ export default function Resume() {
                         {/* Experience */}
                         <div className={styles.leftColumn}>
                             <h3>EXPERIENCE</h3>
-                            {/* Fandom */}
                             <div>
                                 <h4>Fandom (Metacritic / TV Guide) - Software Engineer - Back-End Developer</h4>
                                 <p>2022 - 2023</p>
@@ -37,8 +35,6 @@ export default function Resume() {
                                 <p><strong>Methods:</strong> Code reviews (PR), Pair programming, Agile & Waterfall methods.</p>
                                 <p><strong>Technologies:</strong> PHP, Symfony, GCP, MongoDB, MySQL, Solr, Memcached, VueJS, jQuery, Docker.</p>
                             </div>
-
-                            {/* Red Ventures */}
                             <div>
                                 <h4>Red Ventures (CNET / ZDNET) - Software Engineer - Full-Stack Developer</h4>
                                 <p>2020 - 2022</p>
@@ -50,8 +46,6 @@ export default function Resume() {
                                 <p><strong>Methods:</strong> Code reviews (PR), Agile & Waterfall methods.</p>
                                 <p><strong>Technologies:</strong> Ruby on Rails, PHP, Symfony, MongoDB, MySQL, Solr, Memcached, VueJS, jQuery, Docker.</p>
                             </div>
-
-                            {/* Paramount ViacomCBS */}
                             <div>
                                 <h4>Paramount ViacomCBS (Chowhound) - Software Engineer - Back-End Developer</h4>
                                 <p>2016 - 2020</p>
@@ -63,8 +57,6 @@ export default function Resume() {
                                 <p><strong>Methods:</strong> Pair programming, Code reviews (PR), Full-on scrum methodology.</p>
                                 <p><strong>Technologies:</strong> Ruby on Rails, Resque, MySQL, Redis, Memcached, Bootstrap, Docker, Heroku, React, AWS, jQuery.</p>
                             </div>
-
-                            {/* Trulify */}
                             <div>
                                 <h4>Trulify - Software Engineer - Full-Stack Developer</h4>
                                 <p>2013 - 2015</p>
