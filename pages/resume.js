@@ -14,7 +14,7 @@ export default function Resume() {
                 <div className={utilStyles.list}>
                     <div>
                         <p className={styles.topLink}>
-                            <Link href={`https://www.mkpascal.net/ws_resume.pdf`}>
+                            <Link href={`https://www.mkpascal.net/se_resume.pdf`}>
                                 <i className="fas fa-file-download"></i> Download PDF Resume
                             </Link>
                         </p>
@@ -29,48 +29,50 @@ export default function Resume() {
                         <div className={styles.leftColumn}>
                             <h3>EXPERIENCE</h3>
                             <div>
-                                <h4>Fandom (Metacritic / TV Guide) - Software Engineer - Back-End Developer</h4>
+                                <h4>Fandom - Software Engineer - Back-End Developer</h4>
                                 <p>2022 - 2023</p>
                                 <ul>
-                                    <li>Managed the high-volume CMS powering Metacritic and TV Guide sites reaching millions of website and app users.</li>
-                                    <li>Implemented a transcoding system and CMS and commerce features.</li>
-                                    <li>Contributed to API development for improved front-end usability.</li>
+                                    <li>Managed a high-volume custom CMS for Metacritic & TV Guide sites, serving millions of users.</li>
+                                    <li>Engineered a robust transcoding framework, alongside content and commerce features.</li>
+                                    <li>Played a key role in refining front-end usability through API development contributions.</li>
                                 </ul>
-                                <p><strong>Methods:</strong> Code reviews (PR), Pair programming, Agile & Waterfall methods.
-                                <br/><strong>Technologies:</strong> PHP, Symfony, GCP, MongoDB, MySQL, Solr, Memcached, VueJS, jQuery, Docker.</p>
                             </div>
                             <div>
-                                <h4>Red Ventures (CNET / ZDNET) - Software Engineer - Full-Stack Developer</h4>
+                                <h4>Red Ventures - Software Engineer - Full-Stack Developer</h4>
                                 <p>2020 - 2022</p>
                                 <ul>
-                                    <li>Maintained and optimized a high-traffic content management platform serving millions of users for CNET and ZDNET.</li>
-                                    <li>Oversaw front door, articles, and ads features for both brands.</li>
-                                    <li>Enhanced CMS with new features and commerce functionalities.</li>
+                                    <li>Maintained a high-traffic CMS in-house platform, supporting millions of users for CNET & ZDNET.</li>
+                                    <li>Undertook responsibilities involving front door, articles, and ads features for both brands.</li>
+                                    <li>Revamped the CMS UI/UX offering innovative functionalities and robust commerce integration.</li>
+                                    <li>Demonstrated exceptional proficiency in debugging, data operations, and system integration.</li>
+                                    <li>Architected seamless API solutions to bridge the gap between front-end and back-end systems.</li>
                                 </ul>
-                                <p><strong>Methods:</strong> Code reviews (PR), Agile & Waterfall methods.
-                                <br/><strong>Technologies:</strong> Ruby on Rails, PHP, Symfony, MongoDB, MySQL, Solr, Memcached, VueJS, jQuery, Docker.</p>
                             </div>
                             <div>
-                                <h4>Paramount ViacomCBS (Chowhound) - Software Engineer - Back-End Developer</h4>
+                                <h4>Paramount - Software Engineer - Back-End Developer</h4>
                                 <p>2016 - 2020</p>
                                 <ul>
-                                    <li>Led development of internal CMS/API with Rails as a site engineer.</li>
-                                    <li>Successfully migrated the entire stack from the datacenter to GCP.</li>
-                                    <li>Implemented Place System with 3rd party integration. Dockerized our legacy stack and optimized it for scalability.</li>
+                                    <li>Led development of the full back-end platform with Rails as a site engineer for Chowhound.</li>
+                                    <li>Orchestrated a large-scale migration to GCP, ensuring seamless scalability and reliability.</li>
+                                    <li>Engineered a robust user account system and streamlined mail and queue management.</li>
+                                    <li>Expanding reach and accessibility through Wordpress and Apple News partnerships.</li>
+                                    <li>Pioneered the implementation of a place system through strategic third-party collaborations.</li>
+                                    <li>Revolutionized our legacy stack by dockerizing it and fine-tuning for maximum scalability.</li>
+                                    <li>Elevated server performance by meticulously fine-tuning Apache and Redis for maximum efficiency.</li>
+                                    <li>Implemented a sophisticated branching strategy, fostering a streamlined development process.</li>
                                 </ul>
-                                <p><strong>Methods:</strong> Pair programming, Code reviews (PR), Full-on scrum methodology.
-                                <br/><strong>Technologies:</strong> Ruby on Rails, Resque, MySQL, Redis, Memcached, Bootstrap, Docker, Heroku, React, AWS, jQuery.</p>
                             </div>
                             <div>
                                 <h4>Trulify - Software Engineer - Full-Stack Developer</h4>
                                 <p>2013 - 2015</p>
                                 <ul>
-                                    <li>Collaborated on Trulify and FairLoan app development using Rails.</li>
-                                    <li>Integrated custom APIs with payroll service bureaus and implemented Chargify for subscription billing.</li>
-                                    <li>Designed secure server/client solution for uniform data exchange with payroll bureaus, handling sensitive PII.</li>
+                                    <li>Developed and built Trulify and FairLoan apps using Rails, delivering scalable and robust solutions.</li>
+                                    <li>Engineered API connections with payroll service bureaus, enabling automated data exchange.</li>
+                                    <li>Implemented a payment infrastructure, efficient subscription management, and billing.</li>
+                                    <li>Enhanced user engagement by integrating Twilio's SMS system, ensuring seamless communication.</li>
+                                    <li>Migrated the frontend framework to Bootstrap, improving the user experience and responsiveness.</li>
+                                    <li>Designed and implemented secure data exchange protocols, safeguarding sensitive PII.</li>
                                 </ul>
-                                <p><strong>Methods:</strong> Code reviews (PR), Strict git flow, Agile (IPM/Stand-up).
-                                <br/><strong>Technologies:</strong> Ruby on Rails, Sidekiq, Bootstrap, Heroku, AWS, jQuery.</p>
                             </div>
                             <div className={styles.langResume}>
                             <h3>LANGUAGES</h3>
@@ -84,27 +86,27 @@ export default function Resume() {
                             <h3>SKILLS</h3>
                             <div>
                                 <h4>Languages</h4>
-                                <p>Ruby, Javascript, PHP, HTML/CSS, SCSS, Dart</p>
+                                <p>Ruby | Javascript | PHP | HTML | CSS | Sass | Dart | Shell scripting</p>
                             </div>
                             <div>
-                                <h4>Frameworks / Environments</h4>
-                                <p>Rails, Node.js, Express, Sinatra, Bootstrap, Next.js, jQuery, React, Electron, Flutter</p>
+                                <h4>Frameworks</h4>
+                                <p>Rails | Sinatra | Node.js | Bootstrap | Next.js | React | Electron | Flutter</p>
                             </div>
                             <div>
-                                <h4>Libraries / Services</h4>
-                                <p>Sidekiq, ActiveAdmin, Devise, Twilio, Sendgrid, Postmark</p>
-                            </div>
-                            <div>
-                                <h4>AI / ML</h4>
-                                <p>OpenAI, LocalAI, llama.cpp, Stable Diffusion</p>
-                            </div>
-                            <div>
-                                <h4>QA & CI/CD</h4>
-                                <p>RSpec, Capybara, Selenium, GitHub Actions, Jenkins</p>
+                                <h4>Libraries</h4>
+                                <p>Sidekiq | Devise | Sendgrid | Postmark | ActiveAdmin | llama.cpp | Dart</p>
                             </div>
                             <div>
                                 <h4>DevOps</h4>
-                                <p>Docker, GCP, Cloudflare, Fastly, Heroku, AWS, OVH, DO, New Relic</p>
+                                <p>Docker | GCP | Cloudflare | Fastly | Heroku | AWS | OVH | Digitalocean | New Relic</p>
+                            </div>
+                            <div>
+                                <h4>Integrations</h4>
+                                <p>GitHub Actions | Jenkins | RSpec | Capybara | Rubocop | Selenium</p>
+                            </div>
+                            <div>
+                                <h4>Databases</h4>
+                                <p>PostgreSQL | Redis | MongoDB | MySQL | SQLite | Solr | Memcached</p>
                             </div>
                             <div>
                                 <h4>System Administration</h4>
@@ -115,22 +117,21 @@ export default function Resume() {
                                 <p>Postgres, Redis, MongoDB, MySQL, SQLite, Solr</p>
                             </div>
                             <div>
-                                <h4>Media Tech / Miscellaneous</h4>
-                                <p>Icecast, liquidsoap, ffmpeg, OBS, Blackmagic, Photoshop, Premiere Pro, Logic Pro</p>
+                                <h4>Methodologies</h4>
+                                <p>Pair programming | Code reviews | Facilitating processes | Directing engineers</p>
                             </div>
                             <div>
-                                <h4>Project / Tech Management</h4>
-                                <p>Gitflow, Agile, Scrum, Jira, Pivotal Tracker</p>
+                                <h4>Miscellaneous</h4>
+                                <p>Agile | Scrum | Gitflow | Extreme programming | Test-driven development | Gitflow</p>
                             </div> 
                             <div>
                                 <h3>EDUCATION</h3>
                                 <div>
-                                    <h4>SUPINFO University (Paris, France) - Bachelor of Science (B.Sc.) with honors in Computer Science</h4>
+                                    <h4>SUPINFO University (Paris, France) - Bachelor of Science with Honours (B.Sc. Hons.) in Computer Science</h4>
                                     <p>2008-2013</p>
-                                    <p>Throughout my education in computer science, I pursued many internships.</p>
                                 </div>
                                 <div>
-                                    <h4>Previous Internships</h4>
+                                    <h4>Internships</h4>
                                     <div>
                                         <p>iTLiGENT (Paris, France) - Software Engineer - Full-Stack Developer
                                         <br/>2011-2012</p>
