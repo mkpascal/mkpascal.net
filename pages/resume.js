@@ -30,7 +30,7 @@ export default function Resume() {
                             <h3>EXPERIENCE</h3>
                             <div>
                                 <h4>Fandom - Software Engineer - Back-End Developer</h4>
-                                <p>2022 - 2023</p>
+                                <p>10/2022 - 05/2023</p>
                                 <ul>
                                     <li>Managed a high-volume custom CMS for Metacritic & TV Guide sites, serving 40 millions of monthly visitors.</li>
                                     <li>Engineered a robust transcoding framework using JWP, alongside content and commerce features.</li>
@@ -39,7 +39,7 @@ export default function Resume() {
                             </div>
                             <div>
                                 <h4>Red Ventures - Software Engineer - Full-Stack Developer</h4>
-                                <p>2020 - 2022</p>
+                                <p>12/2020 - 10/2022</p>
                                 <ul>
                                     <li>Maintained a high-traffic CMS in-house platform, supporting 75 millions of monthly users for CNET & ZDNET.</li>
                                     <li>Undertook responsibilities involving front door, articles, and ads features for both brands.</li>
@@ -49,7 +49,7 @@ export default function Resume() {
                             </div>
                             <div>
                                 <h4>Paramount - Software Engineer - Back-End Developer</h4>
-                                <p>2016 - 2020</p>
+                                <p>07/2016 - 12/2020</p>
                                 <ul>
                                     <li>Led development of the full back-end platform with Rails as a site engineer for Chowhound, reaching 3 million monthly users.</li>
                                     <li>Orchestrated a large-scale migration to GCP, updating legacy stack to Docker, ensuring seamless scalability and reliability. Elevated server performance by meticulously fine-tuning Apache and Redis for maximum efficiency.</li>
@@ -58,7 +58,7 @@ export default function Resume() {
                             </div>
                             <div>
                                 <h4>Trulify - Software Engineer - Full-Stack Developer</h4>
-                                <p>2013 - 2015</p>
+                                <p>06/2013 - 04/2015</p>
                                 <ul>
                                     <li>Developed and built internal apps using Rails, delivering scalable and robust solutions.</li>
                                     <li>Engineered API connections with payroll service bureaus, enabling automated data exchange.</li>
@@ -78,22 +78,22 @@ export default function Resume() {
                             <div>
                                 <h3>EDUCATION</h3>
                                 <div>
-                                    <h4>SUPINFO University (Paris, France) - Bachelor of Science with Honours (B.Sc. Hons.) in Computer Science</h4>
-                                    <p>2008-2013</p>
+                                    <h4>SUPINFO University (Paris, France)</h4>
+                                    <p>Bachelor of Science with Honours (B.Sc. Hons.) in Computer Science<br/>09/2008 - 06/2013</p>
                                 </div>
                                 <div>
                                     <h4>Internships</h4>
                                     <div>
                                         <p>iTLiGENT (Paris, France) - Software Engineer - Full-Stack Developer
-                                        <br/>2011-2012</p>
+                                        <br/>01/2011 - 01/2012</p>
                                     </div>
                                     <div>
                                         <p>Milky Interactive (Paris, France) - Software Engineer - Front-End Developer
-                                        <br/>Summer 2010</p>
+                                        <br/>07/2010 - 09/2010</p>
                                     </div>
                                     <div>
                                         <p>Vigilio (Paris, France) - Software Engineer - Front-End Developer
-                                        <br/>Summer 2009</p>
+                                        <br/>07/2009 - 09/2009</p>
                                     </div>
                                 </div>
                             </div>
