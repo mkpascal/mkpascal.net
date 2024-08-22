@@ -104,16 +104,20 @@ export default function Resume() {
                                     </div>
                                 </div>
                             </div>
+
+
+                        <div>
+                            <h3>LANGUAGES</h3>
+                            <div>
+                                <p>English - Bilingual Proficiency</p>
+                                <p>French - Native Language</p>
+                            </div>
+                        </div>
+    
                         </div>
                     </div>
 
-                    <div className={styles.langResumeBottom}>
-                        <h3>LANGUAGES</h3>
-                        <div>
-                            <p>English - Bilingual Proficiency</p>
-                            <p>French - Native Language</p>
-                        </div>
-                    </div>
+
                 </div>
             </section>
         </LayoutLarge>
