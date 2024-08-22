@@ -66,13 +66,6 @@ export default function Resume() {
                                     <li>Designed and implemented secure data exchange protocols, safeguarding sensitive PII.</li>
                                 </ul>
                             </div>
-                            <div className={styles.langResume}>
-                            <h3>LANGUAGES</h3>
-                                <div>
-                                    <p>English - Bilingual Proficiency</p>
-                                    <p>French - Native Language</p>
-                                </div>
-                            </div>
                         </div>
                         <div className={styles.rightColumn}>
                             <h3>SKILLS</h3>
