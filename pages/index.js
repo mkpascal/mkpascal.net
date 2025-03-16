@@ -15,7 +15,7 @@ export default function Home({ allPostsData, allProjectsData }) {
       </Head>
       <section className={`${utilStyles.headingMd}`}>
         <p className={utilStyles.topP}>
-            I’m a Senior Software Engineer located in the San Francisco Bay Area, California, U.S.A. I'm fluent in English & French.
+            I’m a Senior Software Engineer &#64; Unity, based in the San Francisco Bay Area, California, U.S.A. I'm fluent in English & French.
             <span style={{ display: 'none' }} className={utilStyles.spanTop}>I'm actively exploring back-end & full-stack site engineering opportunities, with a preference for Ruby on Rails positions. Check my resume out <Link href={`/resume`}>here</Link>. You can reach me via email at <a href="mailto:pmk@khot.us">pmk@khot.us</a>.</span>
         </p>
       </section>
