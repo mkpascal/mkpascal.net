@@ -100,7 +100,7 @@ export default function Home({ allPostsData, allProjectsData }) {
               </Link>              
             </li>
             <li className={`${utilStyles.listItem} ${utilStyles.listInLine}`}><Link target="_blank" href={`https://github.com/mkpascal/qust/releases`}><i className="fas fa-music"></i>  Qust </Link><small style={{color: '#666', fontSize: '0.75em'}}>Simple And Efficient Streaming Radio Player ( <i className="fab fa-windows"></i> / <i className="fab fa-apple"></i> )</small></li>
-            <li className={`${utilStyles.listItem} ${utilStyles.listInLine}`}><Link target="_blank" href={`https://apps.apple.com/us/app/c9-radio-au-rythme-des-hits/id6443767655`}><i className="fas fa-broadcast-tower"></i>  C9 </Link><small style={{color: '#666', fontSize: '0.75em'}}>Radio Station App ( <i className="fab fa-apple"></i> iOS )</small></li>
+            <li className={`${utilStyles.listItem} ${utilStyles.listInLine}`}><Link target="_blank" href={`https://apps.apple.com/us/app/c9-radio-au-rythme-des-hits/id6443767655`}><i className="fas fa-broadcast-tower"></i>  C9 Radio </Link><small style={{color: '#666', fontSize: '0.75em'}}>Radio Station Streaming App (<i className="fab fa-apple"></i> iOS )</small></li>
             </ul>
       </section>              
     </Layout>
