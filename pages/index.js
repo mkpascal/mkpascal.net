@@ -6,6 +6,7 @@ import { getSortedProjectsData } from '../lib/projects'
 import Link from 'next/link'
 import Date from '../components/date'
 import Image from "next/image";
+import { SHOW_RESUME } from '../lib/flags'
 
 export default function Home({ allPostsData, allProjectsData }) {
   return (
@@ -16,7 +17,7 @@ export default function Home({ allPostsData, allProjectsData }) {
       <section className={`${utilStyles.headingMd}`}>
         <p className={utilStyles.topP}>
             I’m a Senior Software Engineer &#64; Unity, based in the San Francisco Bay Area, California, U.S.A. I'm fluent in English & French.
-            <span style={{ display: 'none' }} className={utilStyles.spanTop}>I'm actively exploring back-end & full-stack site engineering opportunities, with a preference for Ruby on Rails positions. Check my resume out <Link href={`/resume`}>here</Link>. You can reach me via email at <a href="mailto:pmk@khot.us">pmk@khot.us</a>.</span>
+            {SHOW_RESUME && <span style={{ display: 'none' }} className={utilStyles.spanTop}>I'm actively exploring back-end & full-stack site engineering opportunities, with a preference for Ruby on Rails positions. Check my resume out <Link href={`/resume`}>here</Link>. You can reach me via email at <a href="mailto:pmk@khot.us">pmk@khot.us</a>.</span>}
         </p>
       </section>
       <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
@@ -99,7 +100,7 @@ export default function Home({ allPostsData, allProjectsData }) {
               </Link>              
             </li>
             <li className={`${utilStyles.listItem} ${utilStyles.listInLine}`}><Link target="_blank" href={`https://github.com/mkpascal/qust/releases`}><i className="fas fa-music"></i>  Qust </Link><small style={{color: '#666', fontSize: '0.75em'}}>Simple And Efficient Streaming Radio Player ( <i className="fab fa-windows"></i> / <i className="fab fa-apple"></i> )</small></li>
-            <li className={`${utilStyles.listItem} ${utilStyles.listInLine}`}><Link target="_blank" href={`https://www.c9.fr/files/software/R2PT-win32-x64-build-0002.zip`}><i className="fas fa-box"></i>  R2PT </Link><small style={{color: '#666', fontSize: '0.75em'}}>Companion App For The Rodecaster Pro 2 ( <i className="fab fa-windows"></i> )</small></li>
+            <li className={`${utilStyles.listItem} ${utilStyles.listInLine}`}><Link target="_blank" href={`https://apps.apple.com/us/app/c9-radio-au-rythme-des-hits/id6443767655`}><i className="fas fa-broadcast-tower"></i>  C9 </Link><small style={{color: '#666', fontSize: '0.75em'}}>Radio Station App ( <i className="fab fa-apple"></i> iOS )</small></li>
             </ul>
       </section>              
     </Layout>

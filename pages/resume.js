@@ -3,6 +3,11 @@ import Link from 'next/link';
 import LayoutLarge, { siteTitle } from '../components/layout-large';
 import utilStyles from '../styles/utils.module.css';
 import styles from '../styles/resume.module.css';
+import { SHOW_RESUME } from '../lib/flags';
+
+export async function getStaticProps() {
+    return SHOW_RESUME ? { props: {} } : { notFound: true };
+}
 
 export default function Resume() {
     return (

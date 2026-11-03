@@ -18,7 +18,7 @@ export default function Layout({ children, home }) {
         />
         <meta
           property="og:image"
-          content="https://www.mkpascal.net/images/PASCAL_LAST_MAY.jpg"
+          content="https://www.mkpascal.net/images/PASCAL_2026.jpg"
         />
         <meta name="og:title" content={siteTitle} />
         <meta name="twitter:card" content="summary_large_image" />
@@ -28,7 +28,7 @@ export default function Layout({ children, home }) {
           <>
             <Image
               priority
-              src="/images/PASCAL_LAST_MAY.jpg"
+              src="/images/PASCAL_2026.jpg"
               className={utilStyles.borderCircle}
               height={144}
               width={144}
@@ -41,7 +41,7 @@ export default function Layout({ children, home }) {
             <Link href="/">
               <Image
                 priority
-                src="/images/PASCAL_LAST_MAY.jpg"
+                src="/images/PASCAL_2026.jpg"
                 className={utilStyles.borderCircle}
                 height={108}
                 width={108}
