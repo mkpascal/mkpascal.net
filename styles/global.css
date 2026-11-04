@@ -30,6 +30,11 @@ html body {
   font-size: 1rem;
 }
 
+/* Always reserve the scrollbar's space so short and long pages have the same width (no left/right jump). */
+html {
+  scrollbar-gutter: stable;
+}
+
 html,
 html body {
   padding: 0;
