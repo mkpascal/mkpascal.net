@@ -28,6 +28,8 @@ export default function Home({ allPostsData, allProjectsData }) {
                     <li className={`${utilStyles.listItem} ${utilStyles.listInLine}`}><Link target="_blank" href={`https://www.twitter.com/mkpascal`}><i className="fab fa-twitter"></i></Link></li>
                     <li className={`${utilStyles.listItem} ${utilStyles.listInLine}`}><Link target="_blank" href={`https://www.linkedin.com/in/mkpascal`}><i className="fab fa-linkedin"></i></Link></li>
                     <li className={`${utilStyles.listItem} ${utilStyles.listInLine}`}><Link target="_blank" href={`https://github.com/mkpascal`}><i className="fab fa-github"></i></Link></li>
+                    <li className={`${utilStyles.listItem} ${utilStyles.listInLine}`}><Link target="_blank" href={`https://apps.apple.com/us/developer/pascal-muang-khot/id945834562`}><i className="fab fa-app-store-ios"></i></Link></li>
+                    <li className={`${utilStyles.listItem} ${utilStyles.listInLine}`}><Link target="_blank" href={`https://play.google.com/store/apps/dev?id=8406828041468545861`}><i className="fab fa-google-play"></i></Link></li>
             </ul>
             </h2>
       </section>
@@ -88,17 +90,16 @@ export default function Home({ allPostsData, allProjectsData }) {
           ))}
         </ul>
       </section>
-      <section style={{ margin: '35px 0 20px' }} className={`${utilStyles.headingMd} ${utilStyles.padding1px}}`}>
+      <section style={{ margin: '35px 0 20px' }} className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
+            <h2 className={utilStyles.headingLg3}>Games</h2>
+            <ul className={`${utilStyles.list} row`}>
+            <li className={`${utilStyles.listItem} ${utilStyles.listInLine}`}><Link target="_blank" href={`https://www.program.gg/games/bigdumbbash`}><i className="fas fa-crosshairs"></i>  Big Dumb Bash </Link><small style={{color: '#666', fontSize: '0.75em'}}>Party Shooter, 3v3 Shootouts</small></li>
+            <li className={`${utilStyles.listItem} ${utilStyles.listInLine}`}><Link target="_blank" href={`https://www.program.gg/games/wackywackywacky`}><i className="fas fa-running"></i>  WackyWackyWacky </Link><small style={{color: '#666', fontSize: '0.75em'}}>Fast-Paced Platformer Where The Floor Fights Back</small></li>
+            </ul>
+      </section>
+      <section style={{ margin: '20px 0 20px' }} className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
             <h2 className={utilStyles.headingLg3}>Software</h2>
             <ul className={`${utilStyles.list} row`}>
-            <li className={`${utilStyles.listItem} ${utilStyles.listInLine}`}> 
-              <Link target="_blank" href={`https://apps.apple.com/us/developer/pascal-muang-khot/id945834562`}>
-                <Image src={`https://www.mkpascal.net/images/astoresoft.png`} height={200} width={59} style={{ width: '40%', height: 'auto', float: 'left', margin: '0 30px 0 0' }} />
-              </Link>
-              <Link target="_blank" href={`https://play.google.com/store/apps/dev?id=8406828041468545861`}>
-                <Image src={`https://www.mkpascal.net/images/gplaysoft.png`} height={200} width={59} style={{ width: '40%', height: 'auto', float: 'left', margin: '0 0 15px 0' }} />
-              </Link>              
-            </li>
             <li className={`${utilStyles.listItem} ${utilStyles.listInLine}`}><Link target="_blank" href={`https://github.com/mkpascal/qust/releases`}><i className="fas fa-music"></i>  Qust </Link><small style={{color: '#666', fontSize: '0.75em'}}>Simple And Efficient Streaming Radio Player ( <i className="fab fa-windows"></i> / <i className="fab fa-apple"></i> )</small></li>
             <li className={`${utilStyles.listItem} ${utilStyles.listInLine}`}><Link target="_blank" href={`https://apps.apple.com/us/app/c9-radio-au-rythme-des-hits/id6443767655`}><i className="fas fa-broadcast-tower"></i>  C9 Radio </Link><small style={{color: '#666', fontSize: '0.75em'}}>Radio Station Streaming App (<i className="fab fa-apple"></i> iOS )</small></li>
             </ul>
