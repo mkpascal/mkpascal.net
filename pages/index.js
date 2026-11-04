@@ -33,14 +33,14 @@ const GAMES = [
     href: 'https://www.program.gg/games/bigdumbbash',
     icon: 'fas fa-crosshairs',
     description: '3v3 party shooter',
-    platforms: ['Windows', 'macOS', 'Linux'],
+    platforms: ['Windows', 'macOS', 'Linux', 'iOS', 'Android'],
   },
   {
     name: 'WackyWackyWacky',
     href: 'https://www.program.gg/games/wackywackywacky',
     icon: 'fas fa-running',
     description: 'Platformer where the floor fights back',
-    platforms: ['Windows', 'iOS', 'Android'],
+    platforms: ['Windows', 'macOS', 'Linux', 'iOS', 'Android'],
   },
 ]
 
