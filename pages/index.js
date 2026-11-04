@@ -1,12 +1,31 @@
 import Head from 'next/head'
+import Image from 'next/image'
+import Link from 'next/link'
 import Layout, { siteTitle } from '../components/layout'
+import ArticleList from '../components/article-list'
+import styles from '../styles/home.module.css'
 import utilStyles from '../styles/utils.module.css'
 import { getSortedPostsData } from '../lib/posts'
 import { getSortedProjectsData } from '../lib/projects'
-import Link from 'next/link'
-import Date from '../components/date'
-import Image from "next/image";
 import { SHOW_RESUME } from '../lib/flags'
+
+const CONNECTIONS = [
+  { label: 'Email', href: 'mailto:pmk@khot.us', icon: 'fas fa-envelope' },
+  { label: 'GitHub', href: 'https://github.com/mkpascal', icon: 'fab fa-github' },
+  { label: 'LinkedIn', href: 'https://www.linkedin.com/in/mkpascal', icon: 'fab fa-linkedin-in' },
+  { label: 'Threads', href: 'https://www.threads.net/@pmkpascal', icon: 'fas fa-at' },
+  { label: 'Twitter', href: 'https://www.twitter.com/mkpascal', icon: 'fab fa-twitter' },
+  { label: 'App Store', href: 'https://apps.apple.com/us/developer/pascal-muang-khot/id945834562', icon: 'fab fa-app-store-ios' },
+  { label: 'Google Play', href: 'https://play.google.com/store/apps/dev?id=8406828041468545861', icon: 'fab fa-google-play' },
+]
+
+const PLATFORM_ICONS = {
+  Windows: 'fab fa-windows',
+  macOS: 'fab fa-apple',
+  Linux: 'fab fa-linux',
+  iOS: 'fab fa-app-store-ios',
+  Android: 'fab fa-android',
+}
 
 const GAMES = [
   {
@@ -42,108 +61,135 @@ const SOFTWARE = [
   },
 ]
 
+const external = (href) =>
+  href.startsWith('mailto:') ? {} : { target: '_blank', rel: 'noopener noreferrer' }
+
+function SectionHead({ title, children }) {
+  return (
+    <div className={styles.sectionHead}>
+      <h2 className={styles.sectionTitle}>{title}</h2>
+      {children}
+    </div>
+  )
+}
+
+function CardGrid({ items }) {
+  return (
+    <ul className={styles.cards}>
+      {items.map(({ name, href, icon, description, platforms }) => (
+        <li key={name}>
+          <a className={styles.card} href={href} {...external(href)}>
+            <span className={styles.cardTop}>
+              <span className={styles.cardIcon}><i className={icon} aria-hidden="true"></i></span>
+              <i className={`fas fa-arrow-right ${styles.cardArrow}`} aria-hidden="true"></i>
+            </span>
+            <span className={styles.cardName}>{name}</span>
+            <span className={styles.cardDesc}>{description}</span>
+            <span className={styles.chips}>
+              {platforms.map((p) => (
+                <span key={p} className={styles.chip}>
+                  <i className={PLATFORM_ICONS[p]} aria-hidden="true"></i>{p}
+                </span>
+              ))}
+            </span>
+          </a>
+        </li>
+      ))}
+    </ul>
+  )
+}
+
 export default function Home({ allPostsData, allProjectsData }) {
   return (
-    <Layout home>
+    <Layout>
       <Head>
         <title>{siteTitle}</title>
       </Head>
-      <section className={`${utilStyles.headingMd}`}>
-        <p className={utilStyles.topP}>
-            I’m a Senior Software Engineer at Unity, based in the San Francisco Bay Area, California, U.S.A. I'm fluent in English & French.
-            {SHOW_RESUME && <span style={{ display: 'none' }} className={utilStyles.spanTop}>I'm actively exploring back-end & full-stack site engineering opportunities, with a preference for Ruby on Rails positions. Check my resume out <Link href={`/resume`}>here</Link>. You can reach me via email at <a href="mailto:pmk@khot.us">pmk@khot.us</a>.</span>}
-        </p>
-      </section>
-      <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
-            <h2 className={`${utilStyles.headingLg2} ${utilStyles.connectionsHeading}`}>Connections
-            <ul className={`${utilStyles.list} ${utilStyles.listConnections}`}>
-                    <li><Link href={`mailto:pmk@khot.us`}><i className="fas fa-envelope"></i></Link></li>
-                    <li><Link target="_blank" href={`https://www.threads.net/@pmkpascal`}><i className="fas fa-at"></i></Link></li>
-                    <li><Link target="_blank" href={`https://www.twitter.com/mkpascal`}><i className="fab fa-twitter"></i></Link></li>
-                    <li><Link target="_blank" href={`https://www.linkedin.com/in/mkpascal`}><i className="fab fa-linkedin"></i></Link></li>
-                    <li><Link target="_blank" href={`https://github.com/mkpascal`}><i className="fab fa-github"></i></Link></li>
-                    <li><Link target="_blank" href={`https://apps.apple.com/us/developer/pascal-muang-khot/id945834562`}><i className="fab fa-app-store-ios"></i></Link></li>
-                    <li><Link target="_blank" href={`https://play.google.com/store/apps/dev?id=8406828041468545861`}><i className="fab fa-google-play"></i></Link></li>
-            </ul>
-            </h2>
-      </section>
-      <section style={{ display: 'none' }} className={`${utilStyles.headingMd} ${utilStyles.padding1px}}`}>
-            <h2 className={utilStyles.headingLg3}>Projects / Past Experiences</h2>
-            <ul className={`${utilStyles.list} row`}>
-            {allProjectsData.map(({ id, title, logoPath }) => {
-                const hasComma = title.includes(',');
-                const [titleComma, urlComma] = title.split(',', 2);
 
-                return (
-                    <li key={id} className={`${utilStyles.listItem} ${utilStyles.listInLine} col-3`}>
-                        {hasComma ? (
-                            <Link href={`${urlComma}`}>
-                            <Image
-                                src={`${logoPath}`}
-                                className={utilStyles.borderProjects}
-                                height={128}
-                                width={128}
-                                alt={titleComma}
-                                style={{
-                                    width: '100%',
-                                    height: 'auto',
-                                }}
-                            />
-                            </Link>
-                        ) : (
-                            <Link href={`/projects/${id}`}>
-                                <Image
-                                    src={`${logoPath}`}
-                                    className={utilStyles.borderProjects}
-                                    height={128}
-                                    width={128}
-                                    alt={title}
-                                    style={{
-                                        width: '100%',
-                                        height: 'auto',
-                                    }}
-                                />
-                            </Link>
-                        )}
-                    </li>
-                );
-            })}
-        </ul>
+      <section className={styles.hero}>
+        <div className={styles.heroText}>
+          <h1 className={styles.srOnly}>Pascal MUANG KHOT</h1>
+          <p className={styles.lead}>
+            I’m a Senior Software Engineer at Unity, based in the San Francisco Bay Area, California, U.S.A. I'm fluent in English &amp; French.
+          </p>
+          <p className={styles.lead}>
+            On the side, I build games and apps.
+          </p>
+          {SHOW_RESUME && <p style={{ display: 'none' }}>I'm actively exploring back-end & full-stack site engineering opportunities, with a preference for Ruby on Rails positions. Check my resume out <Link href={`/resume`}>here</Link>. You can reach me via email at <a href="mailto:pmk@khot.us">pmk@khot.us</a>.</p>}
+          <div className={styles.actions}>
+            <a className={styles.btnPrimary} href="mailto:pmk@khot.us">Email me</a>
+          </div>
+        </div>
+        <div className={styles.heroPhoto}>
+          <span className={styles.photoGlow} aria-hidden="true"></span>
+          <span className={styles.photoDots} aria-hidden="true"></span>
+          <span className={styles.photoOrbit} aria-hidden="true"></span>
+          <span className={styles.photoRing}>
+            <Image
+              priority
+              src="/images/PASCAL_2026.jpg"
+              alt="Pascal MUANG KHOT"
+              width={640}
+              height={640}
+            />
+          </span>
+        </div>
       </section>
-        <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
-        <h2 className={utilStyles.headingLg4}>Articles <small><Link className={utilStyles.readMoreLink} style={{ display: 'inline', color: '#4d4d4d' }} href="/articles">Read More →</Link></small></h2>
-        <ul className={utilStyles.list}>
-          {allPostsData.slice(0,3).map(({ id, date, title }) => (
-            <li className={utilStyles.listItem} key={id}>
-              <Link href={`/posts/${id}`}>{title}</Link>
-              <br />
-              <small className={utilStyles.lightText}>
-                <Date dateString={date} />
-              </small>
+
+      <section className={styles.section}>
+        <SectionHead title="Connections" />
+        <ul className={styles.connections}>
+          {CONNECTIONS.map(({ label, href, icon }) => (
+            <li key={label}>
+              <a className={styles.connection} href={href} {...external(href)}>
+                <i className={icon} aria-hidden="true"></i>
+                <span>{label}</span>
+              </a>
             </li>
           ))}
         </ul>
       </section>
-      {[
-        { title: 'Games', items: GAMES },
-        { title: 'Software', items: SOFTWARE },
-      ].map(({ title, items }) => (
-        <section key={title} className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
-          <h2 className={utilStyles.headingLg4}>{title}</h2>
-          <ul className={utilStyles.list}>
-            {items.map(({ name, href, icon, description, platforms }) => (
-              <li key={name} className={utilStyles.appItem}>
-                <span className={utilStyles.appIcon}><i className={icon} aria-hidden="true"></i></span>
-                <div className={utilStyles.appBody}>
-                  <Link className={utilStyles.appName} target="_blank" href={href}>{name}</Link>
-                  <span className={utilStyles.appPlatforms}>{platforms.join(' · ')}</span>
-                  <small className={utilStyles.appDesc}>{description}</small>
-                </div>
+
+      <section className={styles.section}>
+        <SectionHead title="Recent articles">
+          <Link className={styles.sectionLink} href="/articles">View all articles <span aria-hidden="true">→</span></Link>
+        </SectionHead>
+        <ArticleList posts={allPostsData.slice(0, 3)} />
+      </section>
+
+      <section id="games" className={styles.section}>
+        <SectionHead title="Games" />
+        <CardGrid items={GAMES} />
+      </section>
+
+      <section id="software" className={styles.section}>
+        <SectionHead title="Software" />
+        <CardGrid items={SOFTWARE} />
+      </section>
+
+      <section style={{ display: 'none' }}>
+        <h2>Projects / Past Experiences</h2>
+        <ul className={`${utilStyles.list} row`}>
+          {allProjectsData.map(({ id, title, logoPath }) => {
+            const hasComma = title.includes(',');
+            const [titleComma, urlComma] = title.split(',', 2);
+            return (
+              <li key={id} className="col-3">
+                <Link href={hasComma ? `${urlComma}` : `/projects/${id}`}>
+                  <Image
+                    src={`${logoPath}`}
+                    className={utilStyles.borderProjects}
+                    height={128}
+                    width={128}
+                    alt={hasComma ? titleComma : title}
+                    style={{ width: '100%', height: 'auto' }}
+                  />
+                </Link>
               </li>
-            ))}
-          </ul>
-        </section>
-      ))}
+            );
+          })}
+        </ul>
+      </section>
     </Layout>
   )
 }
@@ -152,10 +198,10 @@ export async function getStaticProps() {
   const allPostsData = getSortedPostsData()
   const allProjectsData = getSortedProjectsData()
 
-    return {
-        props: {
-          allPostsData,
-          allProjectsData
-        }
+  return {
+    props: {
+      allPostsData,
+      allProjectsData
+    }
   }
 }

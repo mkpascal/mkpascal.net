@@ -1,35 +1,41 @@
-import Layout from '../../components/layout'
-import { getAllProjectIds, getProjectData } from '../../lib/projects'
 import Head from 'next/head'
-import utilStyles from '../../styles/utils.module.css'
+import Link from 'next/link'
+import Layout from '../../components/layout'
+import styles from '../../styles/page.module.css'
+import { getAllProjectIds, getProjectData } from '../../lib/projects'
 
-export default function Post({ projectData }) {
-    return (
-        <Layout>
-            <Head>
-                <title>{projectData.title}</title>
-            </Head>
-            <article>
-                <h1 className={utilStyles.headingXl}>{projectData.title} <span className={`${utilStyles.topBadge} badge ${projectData.categoryClass}`}>{projectData.category}</span></h1>
-                <div dangerouslySetInnerHTML={{ __html: projectData.contentHtml }} />
-            </article>
-        </Layout>
-    )
+export default function Project({ projectData }) {
+  return (
+    <Layout>
+      <Head>
+        <title>{projectData.title}</title>
+      </Head>
+      <article>
+        <header className={styles.header}>
+          {projectData.category && <p className={styles.eyebrow}>{projectData.category}</p>}
+          <h1 className={styles.title}>{projectData.title}</h1>
+        </header>
+        <hr className={styles.divider} />
+        <div className="prose" dangerouslySetInnerHTML={{ __html: projectData.contentHtml }} />
+      </article>
+      <Link className={styles.back} href="/">← Back to home</Link>
+    </Layout>
+  )
 }
 
 export async function getStaticPaths() {
-    const paths = getAllProjectIds()
-    return {
-        paths,
-        fallback: false
-    }
+  const paths = getAllProjectIds()
+  return {
+    paths,
+    fallback: false
+  }
 }
 
 export async function getStaticProps({ params }) {
-    const projectData = await getProjectData(params.id)
-    return {
-        props: {
-            projectData
-        }
+  const projectData = await getProjectData(params.id)
+  return {
+    props: {
+      projectData
     }
+  }
 }

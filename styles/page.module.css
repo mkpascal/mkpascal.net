@@ -1,0 +1,53 @@
+.header {
+  padding: 4rem 0 1.75rem;
+}
+
+.eyebrow {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  color: var(--accent);
+  margin: 0 0 0.875rem;
+}
+
+.title {
+  font-size: 2.4rem;
+  font-weight: 600;
+  line-height: 1.15;
+  letter-spacing: -0.03em;
+  margin: 0;
+}
+
+.subtitle {
+  margin: 0.75rem 0 0;
+  color: var(--text-muted);
+}
+
+.divider {
+  border: 0;
+  border-top: 1px solid var(--border);
+  margin: 0 0 2.25rem;
+  opacity: 1;
+}
+
+.back {
+  display: inline-flex;
+  margin-top: 3rem;
+  font-size: 0.88rem;
+  font-weight: 500;
+  color: var(--text-muted);
+}
+
+.back:hover {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+@media (max-width: 640px) {
+  .header {
+    padding-top: 2.5rem;
+  }
+
+  .title {
+    font-size: 1.85rem;
+  }
+}

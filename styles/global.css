@@ -1,24 +1,66 @@
-@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@10..48,400;10..48,500;10..48,600;10..48,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap');
+
+:root {
+  --bg: #0a1628;
+  --bg-chrome: #0d1c33;
+  --bg-elev: #0f1f39;
+  --bg-elev-2: #152a4a;
+  --border: #1d3356;
+  --border-strong: #2b4a7a;
+  --text: #e8eefa;
+  --text-muted: #a3b3cf;
+  --text-faint: #6f83a8;
+  --accent: #4db5ff;
+  --accent-strong: #7cc8ff;
+  --accent-soft: rgba(77, 181, 255, 0.12);
+  --radius: 1rem;
+  --font-sans: 'Inter', system-ui, -apple-system, 'Segoe UI', sans-serif;
+  --font-mono: 'JetBrains Mono', ui-monospace, 'SFMono-Regular', Consolas, monospace;
+
+  /* Keep Bootstrap's own variables in line with the theme. */
+  --bs-body-bg: var(--bg);
+  --bs-body-color: var(--text);
+  --bs-body-font-family: var(--font-sans);
+  --bs-link-color: var(--accent);
+  --bs-link-hover-color: var(--accent-strong);
+  --bs-border-color: var(--border);
+}
+
+html body {
+  font-size: 1rem;
+}
 
 html,
-body {
+html body {
   padding: 0;
   margin: 0;
-  font-family: 'Bricolage Grotesque', sans-serif;
+  font-family: var(--font-sans);
   line-height: 1.6;
-  font-size: 18px;
+  color: var(--text);
+  background: var(--bg);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 * {
   box-sizing: border-box;
 }
 
+::selection {
+  background: rgba(77, 181, 255, 0.3);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: var(--text);
+}
+
 a {
-  color: #7387d1;
+  color: var(--accent);
   text-decoration: none;
 }
 
 a:hover {
+  color: var(--accent-strong);
   text-decoration: underline;
 }
 
@@ -27,19 +69,99 @@ img {
   display: block;
 }
 
+/* Long-form content: articles and project pages. */
+.prose {
+  font-size: 1.02rem;
+  line-height: 1.75;
+  color: var(--text-muted);
+}
+
+.prose p,
+.prose ul,
+.prose ol,
+.prose blockquote,
+.prose pre {
+  margin: 0 0 1.25rem;
+}
+
+.prose h2,
+.prose h3,
+.prose h4 {
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  margin: 2.25rem 0 0.75rem;
+}
+
+.prose h2 { font-size: 1.45rem; }
+.prose h3 { font-size: 1.2rem; }
+
+.prose strong {
+  color: var(--text);
+}
+
+.prose a {
+  text-decoration: underline;
+  text-decoration-color: rgba(77, 181, 255, 0.4);
+  text-underline-offset: 3px;
+}
+
+.prose a:hover {
+  text-decoration-color: var(--accent-strong);
+}
+
+.prose blockquote {
+  padding: 0.25rem 0 0.25rem 1rem;
+  border-left: 3px solid var(--accent);
+  color: var(--text);
+}
+
+.prose code {
+  font-family: var(--font-mono);
+  font-size: 0.85em;
+  padding: 2px 0.375rem;
+  border-radius: 0.375rem;
+  color: var(--accent-strong);
+  background: var(--bg-elev-2);
+}
+
+.prose pre {
+  padding: 1rem 1.1rem;
+  border: 1px solid var(--border);
+  border-radius: 0.75rem;
+  background: var(--bg-elev);
+  overflow-x: auto;
+}
+
+.prose pre code {
+  padding: 0;
+  color: var(--text);
+  background: none;
+}
+
+.prose img {
+  border-radius: 0.75rem;
+  margin: 1.5rem 0;
+}
+
+.prose hr {
+  border: 0;
+  border-top: 1px solid var(--border);
+  margin: 2rem 0;
+}
+
 img[src$='#portfolio-image'] {
-  box-shadow: 0 10px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19) !important;
+  box-shadow: 0 0.625rem 1.875rem rgba(0, 0, 0, 0.35) !important;
 }
 
 img[src$='#portfolio-badge'] {
   float: left;
-  margin-top: 5px;
-  margin-right: 5px;
+  margin: 0.3125rem 0.3125rem 0 0;
+  border-radius: 0;
 }
 
 img[src$='#portfolio-separator'] {
-  width: 100px;
-  height: 5px;
+  width: 6.25rem;
+  height: 0.3125rem;
   visibility: hidden;
   clear: both;
 }

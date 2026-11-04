@@ -116,24 +116,9 @@
     font-weight: 600;
 }
 
-.connectionsHeading {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    column-gap: 20px;
-    row-gap: 6px;
-}
-
 .listConnections {
-    display: flex;
-    flex-wrap: wrap;
-    flex-shrink: 0;
-    max-width: 100%;
-    gap: 6px 15px;
-}
-
-.listConnections li {
-    margin: 0;
+    display: inline;
+    margin-left: 20px;
 }
 
 .borderProjects {
@@ -153,58 +138,4 @@
 .spanTop {
     display: block;
     margin: 10px 0px 10px 0px;
-}
-
-.appItem {
-    display: flex;
-    gap: 12px;
-    margin: 0 0 1.25rem;
-}
-
-.appIcon {
-    flex: 0 0 1.25em;
-    height: 1.5em;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: #7387d1;
-}
-
-.appBody {
-    flex: 1;
-    min-width: 0;
-    display: grid;
-    grid-template-columns: 1fr auto;
-    grid-template-areas: "name platforms" "desc desc";
-    column-gap: 12px;
-    align-items: baseline;
-}
-
-.appName {
-    grid-area: name;
-}
-
-.appPlatforms {
-    grid-area: platforms;
-    font-size: 0.7em;
-    color: #888;
-    white-space: nowrap;
-}
-
-.appDesc {
-    grid-area: desc;
-    color: #666;
-    font-size: 0.8em;
-    line-height: 1.4;
-}
-
-@media (max-width: 480px) {
-    .appBody {
-        grid-template-columns: 1fr;
-        grid-template-areas: "name" "desc" "platforms";
-    }
-
-    .appPlatforms {
-        margin-top: 2px;
-    }
 }
