@@ -113,7 +113,7 @@ export default function Home({ allPostsData, allProjectsData }) {
             I’m a Senior Software Engineer at Unity, based in the San Francisco Bay Area, California, U.S.A. I'm fluent in English &amp; French.
           </p>
           <p className={styles.lead}>
-            On the side, I build games and apps.
+            On the side, I build games and apps for fun.
           </p>
           {SHOW_RESUME && <p style={{ display: 'none' }}>I'm actively exploring back-end & full-stack site engineering opportunities, with a preference for Ruby on Rails positions. Check my resume out <Link href={`/resume`}>here</Link>. You can reach me via email at <a href="mailto:pmk@khot.us">pmk@khot.us</a>.</p>}
           <div className={styles.actions}>
