@@ -8,6 +8,40 @@ import Date from '../components/date'
 import Image from "next/image";
 import { SHOW_RESUME } from '../lib/flags'
 
+const GAMES = [
+  {
+    name: 'Big Dumb Bash',
+    href: 'https://www.program.gg/games/bigdumbbash',
+    icon: 'fas fa-crosshairs',
+    description: '3v3 party shooter',
+    platforms: ['Windows', 'macOS', 'Linux'],
+  },
+  {
+    name: 'WackyWackyWacky',
+    href: 'https://www.program.gg/games/wackywackywacky',
+    icon: 'fas fa-running',
+    description: 'Platformer where the floor fights back',
+    platforms: ['Windows', 'iOS', 'Android'],
+  },
+]
+
+const SOFTWARE = [
+  {
+    name: 'Qust',
+    href: 'https://github.com/mkpascal/qust/releases',
+    icon: 'fas fa-music',
+    description: 'Streaming radio player',
+    platforms: ['Windows', 'macOS'],
+  },
+  {
+    name: 'C9 Radio',
+    href: 'https://apps.apple.com/us/app/c9-radio-au-rythme-des-hits/id6443767655',
+    icon: 'fas fa-broadcast-tower',
+    description: 'Radio station app',
+    platforms: ['iOS'],
+  },
+]
+
 export default function Home({ allPostsData, allProjectsData }) {
   return (
     <Layout home>
@@ -16,20 +50,20 @@ export default function Home({ allPostsData, allProjectsData }) {
       </Head>
       <section className={`${utilStyles.headingMd}`}>
         <p className={utilStyles.topP}>
-            I’m a Senior Software Engineer &#64; Unity, based in the San Francisco Bay Area, California, U.S.A. I'm fluent in English & French.
+            I’m a Senior Software Engineer at Unity, based in the San Francisco Bay Area, California, U.S.A. I'm fluent in English & French.
             {SHOW_RESUME && <span style={{ display: 'none' }} className={utilStyles.spanTop}>I'm actively exploring back-end & full-stack site engineering opportunities, with a preference for Ruby on Rails positions. Check my resume out <Link href={`/resume`}>here</Link>. You can reach me via email at <a href="mailto:pmk@khot.us">pmk@khot.us</a>.</span>}
         </p>
       </section>
       <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
-            <h2 className={utilStyles.headingLg2}>Connections
+            <h2 className={`${utilStyles.headingLg2} ${utilStyles.connectionsHeading}`}>Connections
             <ul className={`${utilStyles.list} ${utilStyles.listConnections}`}>
-                    <li className={`${utilStyles.listItem} ${utilStyles.listInLine}`}><Link href={`mailto:pmk@khot.us`}><i className="fas fa-envelope"></i></Link></li>
-                    <li className={`${utilStyles.listItem} ${utilStyles.listInLine}`}><Link target="_blank" href={`https://www.threads.net/@pmkpascal`}><i className="fas fa-at"></i></Link></li>
-                    <li className={`${utilStyles.listItem} ${utilStyles.listInLine}`}><Link target="_blank" href={`https://www.twitter.com/mkpascal`}><i className="fab fa-twitter"></i></Link></li>
-                    <li className={`${utilStyles.listItem} ${utilStyles.listInLine}`}><Link target="_blank" href={`https://www.linkedin.com/in/mkpascal`}><i className="fab fa-linkedin"></i></Link></li>
-                    <li className={`${utilStyles.listItem} ${utilStyles.listInLine}`}><Link target="_blank" href={`https://github.com/mkpascal`}><i className="fab fa-github"></i></Link></li>
-                    <li className={`${utilStyles.listItem} ${utilStyles.listInLine}`}><Link target="_blank" href={`https://apps.apple.com/us/developer/pascal-muang-khot/id945834562`}><i className="fab fa-app-store-ios"></i></Link></li>
-                    <li className={`${utilStyles.listItem} ${utilStyles.listInLine}`}><Link target="_blank" href={`https://play.google.com/store/apps/dev?id=8406828041468545861`}><i className="fab fa-google-play"></i></Link></li>
+                    <li><Link href={`mailto:pmk@khot.us`}><i className="fas fa-envelope"></i></Link></li>
+                    <li><Link target="_blank" href={`https://www.threads.net/@pmkpascal`}><i className="fas fa-at"></i></Link></li>
+                    <li><Link target="_blank" href={`https://www.twitter.com/mkpascal`}><i className="fab fa-twitter"></i></Link></li>
+                    <li><Link target="_blank" href={`https://www.linkedin.com/in/mkpascal`}><i className="fab fa-linkedin"></i></Link></li>
+                    <li><Link target="_blank" href={`https://github.com/mkpascal`}><i className="fab fa-github"></i></Link></li>
+                    <li><Link target="_blank" href={`https://apps.apple.com/us/developer/pascal-muang-khot/id945834562`}><i className="fab fa-app-store-ios"></i></Link></li>
+                    <li><Link target="_blank" href={`https://play.google.com/store/apps/dev?id=8406828041468545861`}><i className="fab fa-google-play"></i></Link></li>
             </ul>
             </h2>
       </section>
@@ -90,20 +124,26 @@ export default function Home({ allPostsData, allProjectsData }) {
           ))}
         </ul>
       </section>
-      <section style={{ margin: '35px 0 20px' }} className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
-            <h2 className={utilStyles.headingLg3}>Games</h2>
-            <ul className={`${utilStyles.list} row`}>
-            <li className={`${utilStyles.listItem} ${utilStyles.listInLine}`}><Link target="_blank" href={`https://www.program.gg/games/bigdumbbash`}><i className="fas fa-crosshairs"></i>  Big Dumb Bash </Link><small style={{color: '#666', fontSize: '0.75em'}}>Party Shooter, 3v3 Shootouts</small></li>
-            <li className={`${utilStyles.listItem} ${utilStyles.listInLine}`}><Link target="_blank" href={`https://www.program.gg/games/wackywackywacky`}><i className="fas fa-running"></i>  WackyWackyWacky </Link><small style={{color: '#666', fontSize: '0.75em'}}>Fast-Paced Platformer Where The Floor Fights Back</small></li>
-            </ul>
-      </section>
-      <section style={{ margin: '20px 0 20px' }} className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
-            <h2 className={utilStyles.headingLg3}>Software</h2>
-            <ul className={`${utilStyles.list} row`}>
-            <li className={`${utilStyles.listItem} ${utilStyles.listInLine}`}><Link target="_blank" href={`https://github.com/mkpascal/qust/releases`}><i className="fas fa-music"></i>  Qust </Link><small style={{color: '#666', fontSize: '0.75em'}}>Simple And Efficient Streaming Radio Player ( <i className="fab fa-windows"></i> / <i className="fab fa-apple"></i> )</small></li>
-            <li className={`${utilStyles.listItem} ${utilStyles.listInLine}`}><Link target="_blank" href={`https://apps.apple.com/us/app/c9-radio-au-rythme-des-hits/id6443767655`}><i className="fas fa-broadcast-tower"></i>  C9 Radio </Link><small style={{color: '#666', fontSize: '0.75em'}}>Radio Station Streaming App (<i className="fab fa-apple"></i> iOS )</small></li>
-            </ul>
-      </section>              
+      {[
+        { title: 'Games', items: GAMES },
+        { title: 'Software', items: SOFTWARE },
+      ].map(({ title, items }) => (
+        <section key={title} className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
+          <h2 className={utilStyles.headingLg4}>{title}</h2>
+          <ul className={utilStyles.list}>
+            {items.map(({ name, href, icon, description, platforms }) => (
+              <li key={name} className={utilStyles.appItem}>
+                <span className={utilStyles.appIcon}><i className={icon} aria-hidden="true"></i></span>
+                <div className={utilStyles.appBody}>
+                  <Link className={utilStyles.appName} target="_blank" href={href}>{name}</Link>
+                  <span className={utilStyles.appPlatforms}>{platforms.join(' · ')}</span>
+                  <small className={utilStyles.appDesc}>{description}</small>
+                </div>
+              </li>
+            ))}
+          </ul>
+        </section>
+      ))}
     </Layout>
   )
 }
