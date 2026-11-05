@@ -421,9 +421,22 @@
   }
 
   .heroPhoto {
-    justify-self: start;
+    justify-self: center;
     width: 7.5rem;
-    margin: 1rem 0 0 1rem;
+    margin: 1rem 0 0;
+  }
+
+  .heroText {
+    text-align: center;
+  }
+
+  .lead {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .actions {
+    justify-content: center;
   }
 
   .photoOrbit {
